@@ -1,6 +1,0 @@
-fileName=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\fileLeaks.c
-isCpp=
-compilerOpts=-I"C:\Parasoft\20252\cpptest\bin\engine\runtime\include" -DPARASOFT_CPPTEST
-compilerId=gcc_7-64
-workingDir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
-advancedOptionsHash=1237154733
