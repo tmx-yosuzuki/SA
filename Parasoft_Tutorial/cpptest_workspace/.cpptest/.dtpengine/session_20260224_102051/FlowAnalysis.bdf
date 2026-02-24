@@ -1,0 +1,104 @@
+------- cpptestscan v.10.7.3 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\integerOverflow.c
+------- cpptestscan v.10.7.3 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\dbutil.c
+------- cpptestscan v.10.7.3 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\memoryLeaks.c
+------- cpptestscan v.10.7.3 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\sqlInjection.c
+------- cpptestscan v.10.7.3 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\unreachableCode.c
+------- cpptestscan v.10.7.3 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\bufferOverflow.c
+------- cpptestscan v.10.7.3 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\fileLeaks.c
+------- cpptestscan v.10.7.3 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\sql.c
+------- cpptestscan v.10.7.3 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\useBeforeInit.c
+------- cpptestscan v.10.7.3 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\divisionByZero.c
+------- cpptestscan v.10.7.3 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\nullPointerDerefBenchmark.c
+------- cpptestscan v.10.7.3 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\arrayOutOfBounds.c
+------- cpptestscan v.10.7.3 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\nullPointerDeref.c

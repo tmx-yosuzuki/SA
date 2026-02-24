@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+import_prj_wizard.compiler.command.c.win32.x86=C\:\\cygwin64\\bin\\gcc.exe
+import_prj_wizard.compiler.family.win32.x86=gcc_7-64
+import_prj_wizard.dest_page.cfg_mode_radio=default
+import_prj_wizard.dest_page.link_folders_chkbox=true
+import_prj_wizard.dest_page.loc_mode_radio=ws
+import_prj_wizard.dest_page.loc_selector=C\:\\env\\20252\\HostWin\\SA\\Parasoft_Tutorial\\cpptest_workspace\\FlowAnalysis
+import_prj_wizard.dest_page.path_var_predefined_selector=\u65B0\u898F\u30D1\u30B9\u5909\u6570\u3092\u4F5C\u6210...
+import_prj_wizard.dest_page.path_var_value_selector=C\:\\env\\20252\\HostWin\\SA\\Parasoft_Tutorial\\cpptest_workspace\\FlowAnalysis
+import_prj_wizard.options_location=C\:\\env\\20252\\HostWin\\SA\\Parasoft_Tutorial\\cpptest_workspace\\FlowAnalysis\\cpptestscan.bdf

@@ -1,0 +1,8 @@
+file=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\nullPointerDeref.c
+compiler=gcc_7-64
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=-IC:\Parasoft\20252\cpptest\bin\engine\runtime\include
+arg=-DPARASOFT_CPPTEST
+arg=--cpptest_c_file
+arg=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\nullPointerDeref.c

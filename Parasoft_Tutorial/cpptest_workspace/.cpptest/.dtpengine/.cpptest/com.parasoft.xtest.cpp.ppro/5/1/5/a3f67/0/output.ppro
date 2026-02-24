@@ -1,0 +1,24 @@
+PProDataFile version 3.3
+
+H 0 C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\sql.h
+
+K o
+I SQL_API
+F 0
+L 24
+S 24
+f 0
+l 8
+EOR
+
+H 1 C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\sql.c
+
+K o
+I SQL_API
+F 1
+L 6
+S 6
+f 0
+l 8
+EOR
+
