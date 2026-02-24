@@ -1,0 +1,17 @@
+------- cpptestscan v.10.7.3.20251120B4516 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis
+project_name=FlowAnalysis
+arg=C:\cygwin64\bin\gcc.exe
+arg=dbutil.c
+arg=fileLeaks.c
+arg=memoryLeaks.c
+arg=divisionByZero.c
+arg=useBeforeInit.c
+arg=nullPointerDeref.c
+arg=nullPointerDerefBenchmark.c
+arg=arrayOutOfBounds.c
+arg=bufferOverflow.c
+arg=unreachableCode.c
+arg=sqlInjection.c
+arg=sql.c
+arg=integerOverflow.c

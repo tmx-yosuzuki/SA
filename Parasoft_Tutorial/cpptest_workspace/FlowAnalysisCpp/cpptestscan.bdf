@@ -1,0 +1,40 @@
+------- cpptestscan v.10.7.3.20251120B4516 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysisCpp
+project_name=FlowAnalysisCpp
+arg=C:\cygwin64\bin\g++.exe
+arg=-g
+arg=-Iinclude
+arg=-o
+arg=obj/NullPointer.o
+arg=-c
+arg=NullPointer.cpp
+------- cpptestscan v.10.7.3.20251120B4516 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysisCpp
+project_name=FlowAnalysisCpp
+arg=C:\cygwin64\bin\g++.exe
+arg=-g
+arg=-Iinclude
+arg=-o
+arg=obj/DivisionByZero.o
+arg=-c
+arg=DivisionByZero.cpp
+------- cpptestscan v.10.7.3.20251120B4516 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysisCpp
+project_name=FlowAnalysisCpp
+arg=C:\cygwin64\bin\g++.exe
+arg=-g
+arg=-Iinclude
+arg=-o
+arg=obj/MemoryLeak.o
+arg=-c
+arg=MemoryLeak.cpp
+------- cpptestscan v.10.7.3.20251120B4516 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysisCpp
+project_name=FlowAnalysisCpp
+arg=C:\cygwin64\bin\g++.exe
+arg=-g
+arg=-Iinclude
+arg=-o
+arg=obj/DeadLock.o
+arg=-c
+arg=DeadLock.cpp

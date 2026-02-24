@@ -1,0 +1,11 @@
+#Thu Feb 19 17:23:54 JST 2026
+/FlowAnalysis//com.parasoft.xtest.checkers.api.cpp.options.compiler.command.c.win32.x86=C\:\\cygwin64\\bin\\gcc.exe
+/FlowAnalysis//com.parasoft.xtest.checkers.api.cpp.options.compiler.command.cpp.win32.x86=g++
+/FlowAnalysis//com.parasoft.xtest.checkers.api.cpp.options.compiler.family.win32.x86=gcc_7-64
+/FlowAnalysis//com.parasoft.xtest.checkers.api.cpp.options.compiler.options.win32.x86=${cpptest\:original_options} -DPARASOFT_CPPTEST
+/FlowAnalysis//com.parasoft.xtest.checkers.api.cpp.options.extractor.id=options_dir_extractor_id
+/FlowAnalysis//com.parasoft.xtest.checkers.api.cpp.options.linker.command.win32.x86=g++
+/FlowAnalysis//com.parasoft.xtest.checkers.api.cpp.options.linker.options.win32.x86=${cpptest\:original_options}
+/FlowAnalysis//com.parasoft.xtest.checkers.api.cpp.options.ode_auto_scan_mode=never
+/FlowAnalysis//com.parasoft.xtest.checkers.api.cpp.options.ode_options_dir=${resource_loc\:/FlowAnalysis/cpptestscan.bdf}
+project.path=/FlowAnalysis

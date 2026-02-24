@@ -1,0 +1,48 @@
+------- cpptestscan v.10.7.3.20251120B4516 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\Security
+project_name=Security
+arg=C:\cygwin64\bin\gcc.exe
+arg=-o
+arg=obj/cwe22_path_traversal
+arg=-Wno-format-security
+arg=cwe22_path_traversal.c
+------- cpptestscan v.10.7.3.20251120B4516 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\Security
+project_name=Security
+arg=C:\cygwin64\bin\gcc.exe
+arg=-o
+arg=obj/cwe78_os_command_injection
+arg=-Wno-format-security
+arg=cwe78_os_command_injection.c
+------- cpptestscan v.10.7.3.20251120B4516 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\Security
+project_name=Security
+arg=C:\cygwin64\bin\gcc.exe
+arg=-o
+arg=obj/cwe120_classic_buffer_overflow
+arg=-Wno-format-security
+arg=cwe120_classic_buffer_overflow.c
+------- cpptestscan v.10.7.3.20251120B4516 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\Security
+project_name=Security
+arg=C:\cygwin64\bin\gcc.exe
+arg=-o
+arg=obj/cwe121_stack_buffer_overflow
+arg=-Wno-format-security
+arg=cwe121_stack_buffer_overflow.c
+------- cpptestscan v.10.7.3.20251120B4516 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\Security
+project_name=Security
+arg=C:\cygwin64\bin\gcc.exe
+arg=-o
+arg=obj/cwe131_incorrect_buffer_size
+arg=-Wno-format-security
+arg=cwe131_incorrect_buffer_size.c
+------- cpptestscan v.10.7.3.20251120B4516 (cpptesttrace) -------
+working_dir=C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\Security
+project_name=Security
+arg=C:\cygwin64\bin\gcc.exe
+arg=-o
+arg=obj/cwe134_uncontrolled_format_string
+arg=-Wno-format-security
+arg=cwe134_uncontrolled_format_string.c

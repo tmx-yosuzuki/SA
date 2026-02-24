@@ -1,0 +1,1274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?><ResultsSession buildId="Default Project-2026-02-19" date="02/19/26 17:28:14" endTime="1970-01-01T09:00:00+09:00" machine="RPC-D2023-177" project="Default Project" tag="1_フロー解析（チュートリアル）" time="2026-02-19T17:28:14+09:00" toolName="C++test" toolVer="2025.2.0.20251120B2939" user="yosuzuki">
+   <TestParameters cmdLn="cpptestcli: -resource FlowAnalysis -config C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\..\tools\TestConfig\1_フロー解析（チュートリアル）.properties -report C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\\report -showdetails -appconsole stdout "/>
+   <TestConfig machine="RPC-D2023-177" name="1_フロー解析（チュートリアル）" pseudoUrl="c++test.file:/C:/env/20252/HostWin/SA/Parasoft_Tutorial/cpptest_workspace/../tools/TestConfig/1_フロー解析（チュートリアル）.properties" user="yosuzuki"/>
+   <Authors>
+      <Author id="dev1" name="yosuzuki"/>
+   </Authors>
+   <VersionInfos>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.execution" resultId="IExecutionViolation" ver="2"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.execution" resultId="InsureViolation" ver="3"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.scope" resultId="IScopeProjectInfo" ver="3"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IMetricsViolation" ver="2"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IDupCodeViolation" ver="2"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="IFlowAnalysisViolation" ver="2"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.standards" resultId="ICodingStandardsViolation" ver="2"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.generation" resultId="IGenerationInfo" ver="2"/>
+      <StorageInfo ownerId="com.parasoft.xtest.checkers.api.generation" resultId="IGenerationProjectInfo" ver="2"/>
+   </VersionInfos>
+   
+      <Locations>
+         <Loc fsPath="C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\unreachableCode.c" loc="/FlowAnalysis/unreachableCode.c" projPath="/FlowAnalysis" project="FlowAnalysis"/>
+         <Loc fsPath="C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\memoryLeaks.c" loc="/FlowAnalysis/memoryLeaks.c" projPath="/FlowAnalysis" project="FlowAnalysis"/>
+         <Loc fsPath="C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\dbutil.c" loc="/FlowAnalysis/dbutil.c" projPath="/FlowAnalysis" project="FlowAnalysis"/>
+         <Loc fsPath="C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\bufferOverflow.c" loc="/FlowAnalysis/bufferOverflow.c" projPath="/FlowAnalysis" project="FlowAnalysis"/>
+         <Loc fsPath="C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\fileLeaks.c" loc="/FlowAnalysis/fileLeaks.c" projPath="/FlowAnalysis" project="FlowAnalysis"/>
+         <Loc fsPath="C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\useBeforeInit.c" loc="/FlowAnalysis/useBeforeInit.c" projPath="/FlowAnalysis" project="FlowAnalysis"/>
+         <Loc fsPath="C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\divisionByZero.c" loc="/FlowAnalysis/divisionByZero.c" projPath="/FlowAnalysis" project="FlowAnalysis"/>
+         <Loc fsPath="C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\nullPointerDerefBenchmark.c" loc="/FlowAnalysis/nullPointerDerefBenchmark.c" projPath="/FlowAnalysis" project="FlowAnalysis"/>
+         <Loc fsPath="C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\sqlInjection.c" loc="/FlowAnalysis/sqlInjection.c" projPath="/FlowAnalysis" project="FlowAnalysis"/>
+         <Loc fsPath="C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\arrayOutOfBounds.c" loc="/FlowAnalysis/arrayOutOfBounds.c" projPath="/FlowAnalysis" project="FlowAnalysis"/>
+         <Loc fsPath="C:\env\20252\HostWin\SA\Parasoft_Tutorial\cpptest_workspace\FlowAnalysis\nullPointerDeref.c" loc="/FlowAnalysis/nullPointerDeref.c" projPath="/FlowAnalysis" project="FlowAnalysis"/>
+      </Locations>
+   
+   
+   <Scope>
+      <ProjectInformations>
+         <ScopeProjectInfo fltFiles="16" fltLns="654" project="/FlowAnalysis" totFiles="16" totLns="654"/>
+      </ProjectInformations>
+   </Scope>
+   <CodingStandards ownerId="com.parasoft.xtest.checkers.api.standards" time="0:00:14">
+      <Projects>
+         <Project bdCheckedFiles="10" bdTotalFiles="10" checkedFiles="16" checkedLns="654" name="FlowAnalysis" qfixErrs="0" suppErrs="0" totErrs="46" totFiles="16" totLns="654"/>
+      </Projects>
+      <Rules>
+         <RulesList>
+            <Rule cat="BD-API" desc="ライブラリ関数に誤った値を渡してはならない" id="BD-API-BADPARAM" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-API" desc="負の値ではない引数を期待する関数に負の値を渡してはならない" id="BD-API-NEGPARAM" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-API" desc="ctype.h ライブラリ関数に誤った値を渡してはならない" id="BD-API-CTYPE" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-API" desc="負の値ではない引数として渡した後に負の値のチェックを行わない" id="BD-API-REVNEGPARAM" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-API" desc="string.h の関数に渡される size_t 引数には適切な値がなければならない" id="BD-API-STRSIZE" sev="2">
+               <Stats authTot="1;" total="1"/>
+            </Rule>
+            <Rule cat="BD-API" desc="ライブラリ関数に渡される値を検証する" id="BD-API-VALPARAM" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-CO" desc="範囲外のイテレーターにアクセスしない" id="BD-CO-ITOUT" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-CO" desc="有効な参照、ポインター、イテレーターを使用して basic_string の要素を参照する" id="BD-CO-STRMOD" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-CO" desc="std アルゴリズムに空のコンテナー イテレーターを宛先として渡さない" id="BD-CO-EMPCON" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-CO" desc="コンテナーが異なるイテレーターを比較しない" id="BD-CO-ITINVCOMP" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-CO" desc="コンテナーを反復処理中に変更しない" id="BD-CO-ITMOD" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="例外を常にキャッチする" id="BD-PB-EXCEPT" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="文字列リテラルを変更しない" id="BD-PB-MODSTR" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="初期化の前に使用しない" id="BD-PB-NOTINIT" sev="1">
+               <Stats authTot="2;" total="2"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="null ポインターの間接参照を避ける" id="BD-PB-NP" sev="1">
+               <Stats authTot="7;" total="7"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="不正な書式指定子によるバッファー オーバーフローを避ける" id="BD-PB-OVERFFMT" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="ゼロで終わっていない文字列の読み込みによるオーバーフローを避ける" id="BD-PB-OVERFNZT" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="バッファー読み込み時のオーバーフローを避ける" id="BD-PB-OVERFRD" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="バッファー書き込み時のオーバーフローを避ける" id="BD-PB-OVERFWR" sev="1">
+               <Stats authTot="1;" total="1"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="解放済みのラップされたオブジェクトを指してはならない" id="BD-PB-WRAPESC" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="ゼロによる除算を避ける" id="BD-PB-ZERO" sev="1">
+               <Stats authTot="2;" total="2"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="配列の境界を超えてアクセスしてはならない" id="BD-PB-ARRAY" sev="2">
+               <Stats authTot="1;" total="1"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="誤ったシフト演算を避ける" id="BD-PB-BADSHIFT" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="システム間でデータを送信する場合は正しいバイト順序を使用する" id="BD-PB-BYTEORD" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="常に同じ値に評価される条件式を避ける" id="BD-PB-CC" sev="2">
+               <Stats authTot="5;" total="5"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="非 void 関数の戻り値をチェックする" id="BD-PB-CHECKRET" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="常に非 void 関数の戻り値をチェックする" id="BD-PB-CHECKRETGEN" sev="2">
+               <Stats authTot="5;" total="5"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="realloc() を呼び出してオブジェクトのアラインメントを変更してはならない" id="BD-PB-DNMPTR" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="マクロの EOF と標準ライブラリ関数から返された未変更の戻り値を比較するべきである" id="BD-PB-EOFCOMP" sev="2">
+               <Stats authTot="1;" total="1"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="errno 値を適切に使用する" id="BD-PB-ERRNO" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="終了ハンドラーを適切に定義する" id="BD-PB-EXITHAN" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="fgets() または fgetws() が失敗した場合、文字列をリセットする" id="BD-PB-FGETS" sev="2">
+               <Stats authTot="1;" total="1"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="fgetpos() から返された値だけを fsetpos() に使用する" id="BD-PB-FSETPOS" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="無限の再帰を避ける" id="BD-PB-INFREC" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="環境ポインターを無効化する可能性がある演算の後で環境ポインターに依存しない" id="BD-PB-INVENV" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="特定の標準ライブラリ関数から返されたポインターは、そのあとの同じ関数または関連する関数の呼び出しで使用してはならない" id="BD-PB-INVRET" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="標準ライブラリ関数 memcmp を null 終端文字の比較に使用してはならない" id="BD-PB-MCCSTR" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="new ハンドラーを適切に定義する" id="BD-PB-NEWHAN" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="return するべきでない関数から return してはならない" id="BD-PB-NORETURN" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="範囲外の配列およびポインターへのアクセスを避ける" id="BD-PB-OVERFARRAY" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="配列をポリモーフィックに処理しない" id="BD-PB-POLARR" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="ポインター オペランドと、そのオペランドを使用したポインター算術の結果であるポインターは、同じ配列の要素を指していなければならない" id="BD-PB-PTRARR" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="関連のない 2 つのポインターを比較してはならない" id="BD-PB-PTRCMP" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="すでに所有されているポインター値を関連がないスマート ポインターに格納しない" id="BD-PB-PTRVALUE" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="自動変数へのポインターを引数として putenv() を呼び出さない" id="BD-PB-PUTENV" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="シグナル ハンドラーを適切に定義する" id="BD-PB-SIGHAN" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="計算例外シグナル ハンドラーから return しない" id="BD-PB-SIGRETURN" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="間にフラッシュまたは位置付けの処理を呼び出さずに交互にストリームの入力と出力を行ってはならない" id="BD-PB-STREAMINOUT" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="std::forward に渡した引数を後で使用してはならない" id="BD-PB-SUBSEQFRWD" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="移動元オブジェクトの値に依存しない" id="BD-PB-SUBSEQMOVE" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="switch 文には到達できないブランチがあってはならない" id="BD-PB-SWITCH" sev="2">
+               <Stats authTot="1;" total="1"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="terminate ハンドラーを適切に定義する" id="BD-PB-TERMHAN" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="unexpected ハンドラーを適切に定義する" id="BD-PB-UNEXPHAN" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="作成中のオブジェクトの動的型を使用しない" id="BD-PB-VCTOR" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="破棄処理中のオブジェクトの動的型を使用しない" id="BD-PB-VDTOR" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="可変長配列のサイズが有効範囲内であることを確認する" id="BD-PB-VLASIZE" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="1 つのファイルを別のストリームで同時に読み取りアクセス用と書き込みアクセス用に開いてはならない" id="BD-PB-WRRDSTR" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="読み取り専用として開かれたストリームへの書き込みを避ける" id="BD-PB-WRROS" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="文字列の終端がゼロであることを確認する" id="BD-PB-NZTS" sev="3">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="作成された std::exception オブジェクトを必ずスローする" id="BD-PB-STDEXC" sev="3">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="疑わしい値でストリームのフラグを設定している" id="BD-PB-STREAMFLAGS" sev="3">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="ストリーム フォーマットの復元" id="BD-PB-STREAMFMT" sev="3">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="可変引数のマクロを正しく使用する" id="BD-PB-VARARGS" sev="3">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="未使用の値を避ける" id="BD-PB-VOVR" sev="3">
+               <Stats authTot="2;" total="2"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="到達できないメソッドを避ける" id="BD-PB-UCMETH" sev="4">
+               <Stats authTot="11;" total="11"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="コンテナーのインデックスが有効範囲内であることを保証する" id="BD-PB-VALRANGE" sev="4">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-PB" desc="再帰を使用しない" id="BD-PB-RECFUN" sev="5">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-RES" desc="解放関数が確実にリソースを解放することを保証する" id="BD-RES-BADFREEF" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-RES" desc="解放されたリソースを使用してはならない" id="BD-RES-FREE" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-RES" desc="無効なポインタを使用してリソースを解放してはならない" id="BD-RES-INVFREE" sev="1">
+               <Stats authTot="1;" total="1"/>
+            </Rule>
+            <Rule cat="BD-RES" desc="リソースが解放されていることを確認する" id="BD-RES-LEAKS" sev="1">
+               <Stats authTot="5;" total="5"/>
+            </Rule>
+            <Rule cat="BD-RES" desc="定義された上限を超える変数をスタックに配置しない" id="BD-RES-STACKLIM" sev="3">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="二重ロックを避ける" id="BD-TRS-DLOCK" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="fork およびファイル記述子を使用する際の競合状態を避ける" id="BD-TRS-FORKFILE" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="解放されていないロックを放棄してはならない" id="BD-TRS-LOCK" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="異なるロック間でグローバル変数を使用しない" id="BD-TRS-MLOCK" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="異なる順序でロックを獲得しない" id="BD-TRS-ORDER" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="シンボリック リンクの存在を確認する際の競合状態を避ける" id="BD-TRS-SYMLINK" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="ロックを保持している間にブロッキング関数を使用してはならない" id="BD-TRS-TSHL" sev="1">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="複数の POSIX スレッドで共有されるオブジェクトは、適切な記憶域期間を持つよう宣言する" id="BD-TRS-ARG" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="const メンバー関数をスレッドセーフにする" id="BD-TRS-CMF" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="変数は単一のクリティカル セクションのコンテキストで使用するべきである" id="BD-TRS-DIFCS" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="ファイル アクセス時の競合状態を避ける" id="BD-TRS-FRC" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="すでに結合または切り離しされたスレッドを結合または切り離ししない" id="BD-TRS-JOINDETACH" sev="2">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="ビット フィールドを変更する場合は、ロックを使用して競合状態を防ぐ" id="BD-TRS-BITLOCK" sev="3">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="他のスレッドの mutex を破壊しない" id="BD-TRS-DSTRLOCK" sev="3">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+            <Rule cat="BD-TRS" desc="獲得されていないロックを解放しない" id="BD-TRS-REVLOCK" sev="3">
+               <Stats authTot="0;" total="0"/>
+            </Rule>
+         </RulesList>
+         <CategoriesList>
+            <Category desc="フロー解析" name="BD" total="137">
+               <Category desc="誤った API の使用" name="BD-API" total="7">
+                  <Stats authTot="1;" total="1"/>
+               </Category>
+               <Category desc="バグの可能性" name="BD-PB" total="74">
+                  <Stats authTot="39;" total="39"/>
+               </Category>
+               <Category desc="リソース" name="BD-RES" total="8">
+                  <Stats authTot="6;" total="6"/>
+               </Category>
+               <Category desc="コンテナー" name="BD-CO" total="5">
+                  <Stats authTot="0;" total="0"/>
+               </Category>
+               <Category desc="スレッドと同期化" name="BD-TRS" total="21">
+                  <Stats authTot="0;" total="0"/>
+               </Category>
+               <Stats authTot="0;" total="0"/>
+            </Category>
+         </CategoriesList>
+         <SeverityList>
+            <Severity id="1">
+               <Stats authTot="18;" total="18"/>
+            </Severity>
+            <Severity id="2">
+               <Stats authTot="15;" total="15"/>
+            </Severity>
+            <Severity id="3">
+               <Stats authTot="2;" total="2"/>
+            </Severity>
+            <Severity id="4">
+               <Stats authTot="11;" total="11"/>
+            </Severity>
+         </SeverityList>
+      </Rules>
+      
+  <StdViols>
+    <FlowViol msg="インデックス [1...1000] で配列 &quot;cache&quot; の境界外にアクセスしている可能性がある。正しいインデックス [0...999]" ln="33" ruleSAFMsg="境界外アクセスのポイント" auth="yosuzuki" sev="2" rule="BD-PB-ARRAY" ruleSCSCMsg="パスの開始" tool="c++test" id="-546067470" lang="cpp" locType="sr" config="1" hash="-1411136315" locStartln="33" locStartPos="0" locEndLn="34" locEndPos="0" locFile="/FlowAnalysis/arrayOutOfBounds.c" FirstElSrcRngStartln="40" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="41" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/arrayOutOfBounds.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="40" srcRngStartPos="0" srcRngEndLn="41" srcRngEndPos="0" srcRngFile="/FlowAnalysis/arrayOutOfBounds.c" srcRnghash="-1411136315" ln="40" ElType=".C" desc="void clearAllCache()" rngLn="40">
+          <Anns>
+            <Ann msg="パスの開始" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="42" srcRngStartPos="0" srcRngEndLn="43" srcRngEndPos="0" srcRngFile="/FlowAnalysis/arrayOutOfBounds.c" srcRnghash="-1411136315" ln="42" ElType="!" desc="clearCache(0, CACHE_SIZE /* -1 */ ); /* Uncomment to fix accessing out of bounds */" rngLn="42">
+          <ElDescList>
+            <ElDesc srcRngStartln="31" srcRngStartPos="0" srcRngEndLn="32" srcRngEndPos="0" srcRngFile="/FlowAnalysis/arrayOutOfBounds.c" srcRnghash="-1411136315" ln="31" ElType="." desc="int i;" rngLn="31"/>
+            <ElDesc srcRngStartln="32" srcRngStartPos="0" srcRngEndLn="33" srcRngEndPos="0" srcRngFile="/FlowAnalysis/arrayOutOfBounds.c" srcRnghash="-1411136315" ln="32" ElType="." desc="for (i = from_id; i &lt;= to_id; i++) {" rngLn="32">
+              <Anns>
+                <Ann msg="ループ条件評価:(i &lt;= to_id) (true)" kind="condEval"/>
+                <Ann msg="ループに入る" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="33" srcRngStartPos="0" srcRngEndLn="34" srcRngEndPos="0" srcRngFile="/FlowAnalysis/arrayOutOfBounds.c" srcRnghash="-1411136315" ln="33" ElType="." desc="if (cache[i] != 0) {" rngLn="33">
+              <Anns>
+                <Ann msg="条件評価: (cache[i] != 0) (false を仮定)" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="32" srcRngStartPos="0" srcRngEndLn="33" srcRngEndPos="0" srcRngFile="/FlowAnalysis/arrayOutOfBounds.c" srcRnghash="-1411136315" ln="32" ElType="." desc="for (i = from_id; i &lt;= to_id; i++) {" rngLn="32">
+              <Anns>
+                <Ann msg="ループ条件評価:(i &lt;= to_id) (true)" kind="condEval"/>
+                <Ann msg="ループに入る" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="33" srcRngStartPos="0" srcRngEndLn="34" srcRngEndPos="0" srcRngFile="/FlowAnalysis/arrayOutOfBounds.c" srcRnghash="-1411136315" ln="33" ElType=".P" desc="if (cache[i] != 0) {" rngLn="33">
+              <Anns>
+                <Ann msg="境界外アクセスのポイント" kind="point"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <StdViol msg="変数 &quot;i&quot; は到達可能なパスで使用されていない" ln="26" sev="3" auth="yosuzuki" rule="BD-PB-VOVR" tool="c++test" cat="BD-PB" lang="cpp" locType="sr" config="1" hash="226867487" locStartln="26" locStartPos="0" locEndLn="27" locEndPos="0" locFile="/FlowAnalysis/bufferOverflow.c"/>
+    <FlowViol msg="&quot;memset&quot; 関数に渡された &quot;buffer&quot; バッファーのサイズが 999 バイトであり、処理対象のバイト  (= 1000) よりも短い" ln="27" ruleSAFMsg="バッファーが関数に渡されるポイント" auth="yosuzuki" sev="2" rule="BD-API-STRSIZE" ruleSCSCMsg="パスの開始" tool="c++test" id="712942668" lang="cpp" locType="sr" config="1" hash="226867487" locStartln="27" locStartPos="0" locEndLn="28" locEndPos="0" locFile="/FlowAnalysis/bufferOverflow.c" FirstElSrcRngStartln="33" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="34" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/bufferOverflow.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="33" srcRngStartPos="0" srcRngEndLn="34" srcRngEndPos="0" srcRngFile="/FlowAnalysis/bufferOverflow.c" srcRnghash="226867487" ln="33" ElType=".C" desc="resetBuffer(1000 /* BUFFER_SIZE */); /* POSSIBLE BUFFER OVERFLOW HERE */" rngLn="33">
+          <ElDescList>
+            <ElDesc srcRngStartln="26" srcRngStartPos="0" srcRngEndLn="27" srcRngEndPos="0" srcRngFile="/FlowAnalysis/bufferOverflow.c" srcRnghash="226867487" ln="26" ElType="." desc="int i;" rngLn="26"/>
+            <ElDesc srcRngStartln="27" srcRngStartPos="0" srcRngEndLn="28" srcRngEndPos="0" srcRngFile="/FlowAnalysis/bufferOverflow.c" srcRnghash="226867487" ln="27" ElType=".P" desc="memset(buffer, 0, size);" rngLn="27">
+              <Anns>
+                <Ann msg="バッファーが関数に渡されるポイント" kind="point"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+          <Anns>
+            <Ann msg="パスの開始" kind="cause"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="バッファー &quot;buffer&quot; (char[999] 999 バイト) 書き込み時にオーバーフローが発生する。書き込まれるバイト数 = 1000" ln="27" ruleSAFMsg="バッファー オーバーフローが発生したポイント" auth="yosuzuki" sev="1" rule="BD-PB-OVERFWR" ruleSCSCMsg="書き込まれる要素の数が定義されたポイント" tool="c++test" id="1570707077" lang="cpp" locType="sr" config="1" hash="226867487" locStartln="27" locStartPos="0" locEndLn="28" locEndPos="0" locFile="/FlowAnalysis/bufferOverflow.c" FirstElSrcRngStartln="27" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="28" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/bufferOverflow.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="33" srcRngStartPos="0" srcRngEndLn="34" srcRngEndPos="0" srcRngFile="/FlowAnalysis/bufferOverflow.c" srcRnghash="226867487" ln="33" ElType="!" desc="resetBuffer(1000 /* BUFFER_SIZE */); /* POSSIBLE BUFFER OVERFLOW HERE */" rngLn="33">
+          <ElDescList>
+            <ElDesc srcRngStartln="26" srcRngStartPos="0" srcRngEndLn="27" srcRngEndPos="0" srcRngFile="/FlowAnalysis/bufferOverflow.c" srcRnghash="226867487" ln="26" ElType="." desc="int i;" rngLn="26"/>
+            <ElDesc srcRngStartln="27" srcRngStartPos="0" srcRngEndLn="28" srcRngEndPos="0" srcRngFile="/FlowAnalysis/bufferOverflow.c" srcRnghash="226867487" ln="27" ElType="CP" desc="memset(buffer, 0, size);" rngLn="27">
+              <Anns>
+                <Ann msg="書き込まれる要素の数が定義されたポイント" kind="cause"/>
+                <Ann msg="バッファー オーバーフローが発生したポイント" kind="point"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="ゼロである可能性がある &quot;person->daysWorkedInPassedMonth&quot; による除算" ln="9" ruleSAFMsg="ゼロ割のポイント" auth="yosuzuki" sev="1" rule="BD-PB-ZERO" ruleSCSCMsg="パスの開始" tool="c++test" id="-523346250" lang="cpp" locType="sr" config="1" hash="1923244810" locStartln="9" locStartPos="0" locEndLn="10" locEndPos="0" locFile="/FlowAnalysis/divisionByZero.c" FirstElSrcRngStartln="18" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="19" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/divisionByZero.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="18" srcRngStartPos="0" srcRngEndLn="19" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="18" ElType=".C" desc="p->daysWorkedInPassedMonth = 0;" rngLn="18">
+          <Anns>
+            <Ann msg="パスの開始" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="19" srcRngStartPos="0" srcRngEndLn="20" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="19" ElType="!" desc="displayPersonalInfo(p);" rngLn="19">
+          <ElDescList>
+            <ElDesc srcRngStartln="7" srcRngStartPos="0" srcRngEndLn="8" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="7" ElType="." desc="printf(&quot;Name: %s\n&quot;, person->name);" rngLn="7"/>
+            <ElDesc srcRngStartln="8" srcRngStartPos="0" srcRngEndLn="9" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="8" ElType="." desc="printf(&quot;Salary: %d\n&quot;, person->salary);" rngLn="8"/>
+            <ElDesc srcRngStartln="9" srcRngStartPos="0" srcRngEndLn="10" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="9" ElType=".P" desc="printf(&quot;Day's pay: %d\n&quot;, person->salary/person->daysWorkedInPassedMonth);" rngLn="9">
+              <Anns>
+                <Ann msg="ゼロ割のポイント" kind="point"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="ゼロである可能性がある &quot;numberOfEmployees&quot; による除算" ln="26" ruleSAFMsg="ゼロ割のポイント" auth="yosuzuki" sev="1" rule="BD-PB-ZERO" ruleSCSCMsg="パスの開始" tool="c++test" id="-708653029" lang="cpp" locType="sr" config="1" hash="1923244810" locStartln="26" locStartPos="0" locEndLn="27" locEndPos="0" locFile="/FlowAnalysis/divisionByZero.c" FirstElSrcRngStartln="53" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="54" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/divisionByZero.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="53" srcRngStartPos="0" srcRngEndLn="54" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="53" ElType=".C" desc="numberOfEmployees = processFile(file, employees);" rngLn="53">
+          <ElDescList>
+            <ElDesc srcRngStartln="41" srcRngStartPos="0" srcRngEndLn="42" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="41" ElType="!" desc="return 0;" rngLn="41">
+              <Anns>
+                <Ann msg="戻り値: 0" kind="valEval"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+          <Anns>
+            <Ann msg="パスの開始" kind="cause"/>
+            <Ann msg="変数の代入: numberOfEmployees = processFile(file,employees) -> numberOfEmployees = 0" kind="valEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="54" srcRngStartPos="0" srcRngEndLn="55" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="54" ElType="!" desc="processStaff(employees, numberOfEmployees);" rngLn="54">
+          <ElDescList>
+            <ElDesc srcRngStartln="29" srcRngStartPos="0" srcRngEndLn="30" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="29" ElType="!" desc="void processStaff(Person* employees[], int sizeOfStaff)" rngLn="29">
+              <Anns>
+                <Ann msg="パラメーター値: sizeOfStaff = numberOfEmployees -> sizeOfStaff = 0" kind="valEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="31" srcRngStartPos="0" srcRngEndLn="32" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="31" ElType="." desc="int i;" rngLn="31"/>
+            <ElDesc srcRngStartln="32" srcRngStartPos="0" srcRngEndLn="33" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="32" ElType="." desc="for (i = 0; i &lt; sizeOfStaff; ++i) {" rngLn="32">
+              <Anns>
+                <Ann msg="ループ条件評価:(i &lt; sizeOfStaff) (false)" kind="condEval"/>
+                <Ann msg="ループに入っていない" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="35" srcRngStartPos="0" srcRngEndLn="36" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="35" ElType="!" desc="calculateAverageSalary(...)" rngLn="35">
+              <ElDescList>
+                <ElDesc srcRngStartln="23" srcRngStartPos="0" srcRngEndLn="24" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="23" ElType="!" desc="int calculateAverageSalary(int numberOfEmployees)" rngLn="23">
+                  <Anns>
+                    <Ann msg="パラメーター値: numberOfEmployees = sizeOfStaff -> numberOfEmployees = 0" kind="valEval"/>
+                  </Anns>
+                </ElDesc>
+                <ElDesc srcRngStartln="25" srcRngStartPos="0" srcRngEndLn="26" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="25" ElType="." desc="int WAGE_FUND = 10000;" rngLn="25"/>
+                <ElDesc srcRngStartln="26" srcRngStartPos="0" srcRngEndLn="27" srcRngEndPos="0" srcRngFile="/FlowAnalysis/divisionByZero.c" srcRnghash="1923244810" ln="26" ElType=".P" desc="return WAGE_FUND/numberOfEmployees;" rngLn="26">
+                  <Anns>
+                    <Ann msg="ゼロ割のポイント" kind="point"/>
+                  </Anns>
+                </ElDesc>
+              </ElDescList>
+            </ElDesc>
+          </ElDescList>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="EOF マクロは、&quot;fgetc&quot;関数によって返された変更済みの値と比較されている" ln="15" ruleSAFMsg="値と EOF の比較" auth="yosuzuki" sev="2" rule="BD-PB-EOFCOMP" ruleSCSCMsg="EOF を返すことができる関数の呼び出し" tool="c++test" id="-586924587" lang="cpp" locType="sr" config="1" hash="2102946591" locStartln="15" locStartPos="0" locEndLn="16" locEndPos="0" locFile="/FlowAnalysis/fileLeaks.c" FirstElSrcRngStartln="14" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="15" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/fileLeaks.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="14" srcRngStartPos="0" srcRngEndLn="15" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="14" ElType=".C" desc="fgetc(...)" rngLn="14">
+          <Anns>
+            <Ann msg="EOF を返すことができる関数の呼び出し" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="14" srcRngStartPos="0" srcRngEndLn="15" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="14" ElType="!" desc="c = fgetc(file);" rngLn="14">
+          <Anns>
+            <Ann msg="int -> char のキャスト" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="15" srcRngStartPos="0" srcRngEndLn="16" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="15" ElType=".P" desc="if (c!=EOF) {" rngLn="15">
+          <Anns>
+            <Ann msg="char -> int のキャスト" kind="comment"/>
+            <Ann msg="値と EOF の比較" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="ファイルがクローズされていない: file" ln="36" ruleSAFMsg="オープンされたファイルが失われたポイント" auth="yosuzuki" sev="1" rule="BD-RES-LEAKS" ruleSCSCMsg="ファイルがオープンされたポイント" tool="c++test" id="1679861686" lang="cpp" locType="sr" config="1" hash="2102946591" locStartln="36" locStartPos="0" locEndLn="37" locEndPos="0" locFile="/FlowAnalysis/fileLeaks.c" FirstElSrcRngStartln="26" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="27" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/fileLeaks.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="25" srcRngStartPos="0" srcRngEndLn="26" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="25" ElType="." desc="FILE *file;" rngLn="25"/>
+        <ElDesc srcRngStartln="26" srcRngStartPos="0" srcRngEndLn="27" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="26" ElType=".C" desc="file = fopen(&quot;myfile.txt&quot;, &quot;r&quot;);" rngLn="26">
+          <Anns>
+            <Ann msg="ファイルがオープンされたポイント" kind="cause"/>
+            <Ann msg="オープンされたファイル: file" kind="var"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="27" srcRngStartPos="0" srcRngEndLn="28" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="27" ElType="." desc="if (file==NULL) {" rngLn="27">
+          <Anns>
+            <Ann msg="条件評価: (file == 0) (false を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="31" srcRngStartPos="0" srcRngEndLn="32" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="31" ElType="." desc="printf(&quot;File successfully opened.\n\n&quot;);" rngLn="31"/>
+        <ElDesc srcRngStartln="32" srcRngStartPos="0" srcRngEndLn="33" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="32" ElType="." desc="printFile(file);" rngLn="32">
+          <ElDescList>
+            <ElDesc srcRngStartln="11" srcRngStartPos="0" srcRngEndLn="12" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="11" ElType="." desc="char c;" rngLn="11">
+              <Anns>
+                <Ann msg="オープンされたファイル: file" kind="var"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="12" srcRngStartPos="0" srcRngEndLn="13" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="12" ElType="." desc="printf(&quot;Reading file contents:\n\n&quot;);" rngLn="12"/>
+            <ElDesc srcRngStartln="13" srcRngStartPos="0" srcRngEndLn="14" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="13" ElType="." desc="while(1) {" rngLn="13">
+              <Anns>
+                <Ann msg="ループ条件評価:1 (true)" kind="condEval"/>
+                <Ann msg="ループに入る" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="14" srcRngStartPos="0" srcRngEndLn="15" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="14" ElType="." desc="c = fgetc(file);" rngLn="14"/>
+            <ElDesc srcRngStartln="15" srcRngStartPos="0" srcRngEndLn="16" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="15" ElType="." desc="if (c!=EOF) {" rngLn="15">
+              <Anns>
+                <Ann msg="条件評価: (c != -1) (false を仮定)" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="18" srcRngStartPos="0" srcRngEndLn="19" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="18" ElType="." desc="break;" rngLn="18">
+              <Anns>
+                <Ann msg="ループから出る" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc srcRngStartln="35" srcRngStartPos="0" srcRngEndLn="36" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="35" ElType="." desc="return 0;" rngLn="35"/>
+        <ElDesc srcRngStartln="36" srcRngStartPos="0" srcRngEndLn="37" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="36" ElType=".P" desc="}" rngLn="36">
+          <Anns>
+            <Ann msg="オープンされたファイル: file" kind="var"/>
+            <Ann msg="オープンされたファイルが失われたポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="ファイルがクローズされていない: file" ln="49" ruleSAFMsg="オープンされたファイルが失われたポイント" auth="yosuzuki" sev="1" rule="BD-RES-LEAKS" ruleSCSCMsg="ファイルがオープンされたポイント" tool="c++test" id="438135217" lang="cpp" locType="sr" config="1" hash="2102946591" locStartln="49" locStartPos="0" locEndLn="50" locEndPos="0" locFile="/FlowAnalysis/fileLeaks.c" FirstElSrcRngStartln="49" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="50" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/fileLeaks.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="40" srcRngStartPos="0" srcRngEndLn="41" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="40" ElType="." desc="int ARRSIZE = 3;" rngLn="40"/>
+        <ElDesc srcRngStartln="46" srcRngStartPos="0" srcRngEndLn="47" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="46" ElType="." desc="int i;" rngLn="46"/>
+        <ElDesc srcRngStartln="47" srcRngStartPos="0" srcRngEndLn="48" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="47" ElType="." desc="FILE *file = NULL;" rngLn="47"/>
+        <ElDesc srcRngStartln="48" srcRngStartPos="0" srcRngEndLn="49" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="48" ElType="." desc="for (i = 0; i &lt; ARRSIZE; ++i) {" rngLn="48">
+          <Anns>
+            <Ann msg="ループ条件評価:(i &lt; ARRSIZE) (true)" kind="condEval"/>
+            <Ann msg="ループに入る" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="49" srcRngStartPos="0" srcRngEndLn="50" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="49" ElType=".C" desc="file = fopen(names[i], &quot;r&quot;);" rngLn="49">
+          <Anns>
+            <Ann msg="ファイルがオープンされたポイント" kind="cause"/>
+            <Ann msg="オープンされたファイル: file" kind="var"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="50" srcRngStartPos="0" srcRngEndLn="51" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="50" ElType="." desc="if(file==NULL) {" rngLn="50">
+          <Anns>
+            <Ann msg="条件評価: (file == 0) (false を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="54" srcRngStartPos="0" srcRngEndLn="55" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="54" ElType="." desc="printFile(file);" rngLn="54">
+          <ElDescList>
+            <ElDesc srcRngStartln="11" srcRngStartPos="0" srcRngEndLn="12" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="11" ElType="." desc="char c;" rngLn="11">
+              <Anns>
+                <Ann msg="オープンされたファイル: file" kind="var"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="12" srcRngStartPos="0" srcRngEndLn="13" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="12" ElType="." desc="printf(&quot;Reading file contents:\n\n&quot;);" rngLn="12"/>
+            <ElDesc srcRngStartln="13" srcRngStartPos="0" srcRngEndLn="14" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="13" ElType="." desc="while(1) {" rngLn="13">
+              <Anns>
+                <Ann msg="ループ条件評価:1 (true)" kind="condEval"/>
+                <Ann msg="ループに入る" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="14" srcRngStartPos="0" srcRngEndLn="15" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="14" ElType="." desc="c = fgetc(file);" rngLn="14"/>
+            <ElDesc srcRngStartln="15" srcRngStartPos="0" srcRngEndLn="16" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="15" ElType="." desc="if (c!=EOF) {" rngLn="15">
+              <Anns>
+                <Ann msg="条件評価: (c != -1) (false を仮定)" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="18" srcRngStartPos="0" srcRngEndLn="19" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="18" ElType="." desc="break;" rngLn="18">
+              <Anns>
+                <Ann msg="ループから出る" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+        </ElDesc>
+        <ElDesc srcRngStartln="48" srcRngStartPos="0" srcRngEndLn="49" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="48" ElType="." desc="for (i = 0; i &lt; ARRSIZE; ++i) {" rngLn="48">
+          <Anns>
+            <Ann msg="ループ条件評価: (i &lt; ARRSIZE) (true を仮定)" kind="condEval"/>
+            <Ann msg="ループに入る" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="49" srcRngStartPos="0" srcRngEndLn="50" srcRngEndPos="0" srcRngFile="/FlowAnalysis/fileLeaks.c" srcRnghash="2102946591" ln="49" ElType=".P" desc="file = fopen(names[i], &quot;r&quot;);" rngLn="49">
+          <Anns>
+            <Ann msg="オープンされたファイル: file" kind="var"/>
+            <Ann msg="オープンされたファイルが失われたポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="メモリが解放されていない: p" ln="26" ruleSAFMsg="割り当てられたメモリが失われたポイント" auth="yosuzuki" sev="1" rule="BD-RES-LEAKS" ruleSCSCMsg="メモリが割り当てられたポイント" tool="c++test" id="1469909266" lang="cpp" locType="sr" config="1" hash="1502549011" locStartln="26" locStartPos="0" locEndLn="27" locEndPos="0" locFile="/FlowAnalysis/memoryLeaks.c" FirstElSrcRngStartln="18" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="19" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/memoryLeaks.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="12" srcRngStartPos="0" srcRngEndLn="13" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="12" ElType="." desc="char *c;" rngLn="12"/>
+        <ElDesc srcRngStartln="13" srcRngStartPos="0" srcRngEndLn="14" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="13" ElType="." desc="char buf[100];" rngLn="13"/>
+        <ElDesc srcRngStartln="14" srcRngStartPos="0" srcRngEndLn="15" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="14" ElType="." desc="int id = 0;" rngLn="14"/>
+        <ElDesc srcRngStartln="15" srcRngStartPos="0" srcRngEndLn="16" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="15" ElType="." desc="while(1) {" rngLn="15">
+          <Anns>
+            <Ann msg="ループ条件評価:1 (true)" kind="condEval"/>
+            <Ann msg="ループに入る" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="16" srcRngStartPos="0" srcRngEndLn="17" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="16" ElType="." desc="c = fgets(buf, 100, file);" rngLn="16"/>
+        <ElDesc srcRngStartln="17" srcRngStartPos="0" srcRngEndLn="18" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="17" ElType="." desc="if (c!=NULL) {" rngLn="17">
+          <Anns>
+            <Ann msg="条件評価: (c != 0) (true を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="18" srcRngStartPos="0" srcRngEndLn="19" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="18" ElType=".C" desc="malloc(...)" rngLn="18">
+          <Anns>
+            <Ann msg="メモリが割り当てられたポイント" kind="cause"/>
+            <Ann msg="割り当てられたメモリ: malloc(...)" kind="var"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="18" srcRngStartPos="0" srcRngEndLn="19" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="18" ElType="!" desc="Person* p = malloc(sizeof(Person));" rngLn="18"/>
+        <ElDesc srcRngStartln="19" srcRngStartPos="0" srcRngEndLn="20" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="19" ElType="." desc="if (p == 0) exit(1);" rngLn="19">
+          <Anns>
+            <Ann msg="割り当てられたメモリ: p" kind="var"/>
+            <Ann msg="条件評価: (p == 0) (false を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="20" srcRngStartPos="0" srcRngEndLn="21" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="20" ElType="." desc="p->personalId = ++id;" rngLn="20"/>
+        <ElDesc srcRngStartln="21" srcRngStartPos="0" srcRngEndLn="22" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="21" ElType="." desc="p->name = buf;" rngLn="21"/>
+        <ElDesc srcRngStartln="22" srcRngStartPos="0" srcRngEndLn="23" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="22" ElType="." desc="storePerson(p);" rngLn="22"/>
+        <ElDesc srcRngStartln="26" srcRngStartPos="0" srcRngEndLn="27" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="26" ElType=".P" desc="} else {" rngLn="26">
+          <Anns>
+            <Ann msg="割り当てられたメモリ: p" kind="var"/>
+            <Ann msg="割り当てられたメモリが失われたポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="メモリが解放されていない: pointer" ln="40" ruleSAFMsg="割り当てられたメモリが失われたポイント" auth="yosuzuki" sev="1" rule="BD-RES-LEAKS" ruleSCSCMsg="メモリが割り当てられたポイント" tool="c++test" id="112578646" lang="cpp" locType="sr" config="1" hash="1502549011" locStartln="40" locStartPos="0" locEndLn="41" locEndPos="0" locFile="/FlowAnalysis/memoryLeaks.c" FirstElSrcRngStartln="40" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="41" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/memoryLeaks.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="34" srcRngStartPos="0" srcRngEndLn="35" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="34" ElType="." desc="int count = 0;" rngLn="34"/>
+        <ElDesc srcRngStartln="35" srcRngStartPos="0" srcRngEndLn="36" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="35" ElType="." desc="int LOOPS = 100;" rngLn="35"/>
+        <ElDesc srcRngStartln="36" srcRngStartPos="0" srcRngEndLn="37" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="36" ElType="." desc="int MAXSIZE = 100;" rngLn="36"/>
+        <ElDesc srcRngStartln="37" srcRngStartPos="0" srcRngEndLn="38" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="37" ElType="." desc="char *pointer = NULL;" rngLn="37"/>
+        <ElDesc srcRngStartln="39" srcRngStartPos="0" srcRngEndLn="40" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="39" ElType="." desc="for(count=0; count &lt; LOOPS; count++) {" rngLn="39">
+          <Anns>
+            <Ann msg="ループ条件評価:(count &lt; LOOPS) (true)" kind="condEval"/>
+            <Ann msg="ループに入る" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="40" srcRngStartPos="0" srcRngEndLn="41" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="40" ElType=".C" desc="malloc(...)" rngLn="40">
+          <Anns>
+            <Ann msg="メモリが割り当てられたポイント" kind="cause"/>
+            <Ann msg="割り当てられたメモリ: malloc(...)" kind="var"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="40" srcRngStartPos="0" srcRngEndLn="41" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="40" ElType="!" desc="pointer = (char *)malloc(sizeof(char) * MAXSIZE);" rngLn="40"/>
+        <ElDesc srcRngStartln="39" srcRngStartPos="0" srcRngEndLn="40" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="39" ElType="." desc="for(count=0; count &lt; LOOPS; count++) {" rngLn="39">
+          <Anns>
+            <Ann msg="割り当てられたメモリ: pointer" kind="var"/>
+            <Ann msg="ループ条件評価: (count &lt; LOOPS) (true を仮定)" kind="condEval"/>
+            <Ann msg="ループに入る" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="40" srcRngStartPos="0" srcRngEndLn="41" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="40" ElType=".P" desc="pointer = (char *)malloc(sizeof(char) * MAXSIZE);" rngLn="40">
+          <Anns>
+            <Ann msg="割り当てられたメモリ: pointer" kind="var"/>
+            <Ann msg="割り当てられたメモリが失われたポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="メソッド malloc から返される値をチェックするべきである" ln="44" ruleSAFMsg="返された値をここまでにチェックするべきポイント" auth="yosuzuki" sev="2" rule="BD-PB-CHECKRETGEN" ruleSCSCMsg="メソッド呼び出し" tool="c++test" id="133945557" lang="cpp" locType="sr" config="1" hash="1502549011" locStartln="44" locStartPos="0" locEndLn="45" locEndPos="0" locFile="/FlowAnalysis/memoryLeaks.c" FirstElSrcRngStartln="40" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="41" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/memoryLeaks.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="34" srcRngStartPos="0" srcRngEndLn="35" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="34" ElType="." desc="int count = 0;" rngLn="34"/>
+        <ElDesc srcRngStartln="35" srcRngStartPos="0" srcRngEndLn="36" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="35" ElType="." desc="int LOOPS = 100;" rngLn="35"/>
+        <ElDesc srcRngStartln="36" srcRngStartPos="0" srcRngEndLn="37" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="36" ElType="." desc="int MAXSIZE = 100;" rngLn="36"/>
+        <ElDesc srcRngStartln="37" srcRngStartPos="0" srcRngEndLn="38" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="37" ElType="." desc="char *pointer = NULL;" rngLn="37"/>
+        <ElDesc srcRngStartln="39" srcRngStartPos="0" srcRngEndLn="40" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="39" ElType="." desc="for(count=0; count &lt; LOOPS; count++) {" rngLn="39">
+          <Anns>
+            <Ann msg="ループ条件評価:(count &lt; LOOPS) (true)" kind="condEval"/>
+            <Ann msg="ループに入る" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="40" srcRngStartPos="0" srcRngEndLn="41" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="40" ElType=".C" desc="malloc(...)" rngLn="40">
+          <Anns>
+            <Ann msg="メソッド呼び出し" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="40" srcRngStartPos="0" srcRngEndLn="41" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="40" ElType="." desc="pointer = (char *)malloc(sizeof(char) * MAXSIZE);" rngLn="40"/>
+        <ElDesc srcRngStartln="39" srcRngStartPos="0" srcRngEndLn="40" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="39" ElType="." desc="for(count=0; count &lt; LOOPS; count++) {" rngLn="39">
+          <Anns>
+            <Ann msg="ループ条件評価: (count &lt; LOOPS) (false を仮定)" kind="condEval"/>
+            <Ann msg="ループに入っていない" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="44" srcRngStartPos="0" srcRngEndLn="45" srcRngEndPos="0" srcRngFile="/FlowAnalysis/memoryLeaks.c" srcRnghash="1502549011" ln="44" ElType=".P" desc="free(pointer);" rngLn="44">
+          <Anns>
+            <Ann msg="返された値をここまでにチェックするべきポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="&quot;person&quot; は null の可能性がある" ln="13" ruleSAFMsg="null ポインタ間接参照のポイント" auth="yosuzuki" sev="1" rule="BD-PB-NP" ruleSCSCMsg="NULL 値のソース" tool="c++test" id="1452351143" lang="cpp" locType="sr" config="1" hash="585379582" locStartln="13" locStartPos="0" locEndLn="14" locEndPos="0" locFile="/FlowAnalysis/nullPointerDeref.c" FirstElSrcRngStartln="10" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="11" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/dbutil.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="22" srcRngStartPos="0" srcRngEndLn="23" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="22" ElType="!" desc="Person* p = retrievePersonFromDB(id);" rngLn="22">
+          <ElDescList>
+            <ElDesc srcRngStartln="7" srcRngStartPos="0" srcRngEndLn="8" srcRngEndPos="0" srcRngFile="/FlowAnalysis/dbutil.c" srcRnghash="-892903586" ln="7" ElType="." desc="Person* p;" rngLn="7"/>
+            <ElDesc srcRngStartln="8" srcRngStartPos="0" srcRngEndLn="9" srcRngEndPos="0" srcRngFile="/FlowAnalysis/dbutil.c" srcRnghash="-892903586" ln="8" ElType="." desc="int MIN_ID = 1;" rngLn="8"/>
+            <ElDesc srcRngStartln="9" srcRngStartPos="0" srcRngEndLn="10" srcRngEndPos="0" srcRngFile="/FlowAnalysis/dbutil.c" srcRnghash="-892903586" ln="9" ElType="." desc="if (id &lt; MIN_ID) {" rngLn="9">
+              <Anns>
+                <Ann msg="条件評価: (id &lt; MIN_ID) (true を仮定)" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="10" srcRngStartPos="0" srcRngEndLn="11" srcRngEndPos="0" srcRngFile="/FlowAnalysis/dbutil.c" srcRnghash="-892903586" ln="10" ElType=".C" desc="return NULL;" rngLn="10">
+              <Anns>
+                <Ann msg="NULL 値のソース" kind="cause"/>
+                <Ann msg="NULL 値のキャリア: &lt;retrievePersonFromDB() の戻り値>" kind="comment"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+          <Anns>
+            <Ann msg="NULL 値のキャリア: &lt;retrievePersonFromDB() の戻り値> -> p" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="23" srcRngStartPos="0" srcRngEndLn="24" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="23" ElType="!" desc="storePersonToFile(p, file);" rngLn="23">
+          <ElDescList>
+            <ElDesc srcRngStartln="10" srcRngStartPos="0" srcRngEndLn="11" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="10" ElType="!" desc="void storePersonToFile(Person *person, FILE* file)" rngLn="10">
+              <Anns>
+                <Ann msg="NULL 値のキャリア: p -> person" kind="comment"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="12" srcRngStartPos="0" srcRngEndLn="13" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="12" ElType="." desc="if (file!=NULL) {" rngLn="12">
+              <Anns>
+                <Ann msg="条件評価: (file != 0) (true を仮定)" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="13" srcRngStartPos="0" srcRngEndLn="14" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="13" ElType=".P" desc="fprintf(file, &quot;Id: %d Name: %s References:%s\n&quot;," rngLn="13">
+              <Anns>
+                <Ann msg="NULL 値のキャリア: person" kind="comment"/>
+                <Ann msg="null ポインタ間接参照のポイント" kind="point"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+          <Anns>
+            <Ann msg="NULL 値のキャリア: p" kind="comment"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="&quot;file&quot; は null の可能性がある" ln="17" ruleSAFMsg="null ポインタ間接参照のポイント" auth="yosuzuki" sev="1" rule="BD-PB-NP" ruleSCSCMsg="NULL 値のソース" tool="c++test" id="978884114" lang="cpp" locType="sr" config="1" hash="585379582" locStartln="17" locStartPos="0" locEndLn="18" locEndPos="0" locFile="/FlowAnalysis/nullPointerDeref.c" FirstElSrcRngStartln="12" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="13" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/nullPointerDeref.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="12" srcRngStartPos="0" srcRngEndLn="13" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="12" ElType=".C" desc="if (file!=NULL) {" rngLn="12">
+          <Anns>
+            <Ann msg="NULL 値のソース" kind="cause"/>
+            <Ann msg="NULL 値のキャリア: file" kind="comment"/>
+            <Ann msg="条件評価: (file != 0) (false を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="17" srcRngStartPos="0" srcRngEndLn="18" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="17" ElType=".P" desc="fclose(file);" rngLn="17">
+          <Anns>
+            <Ann msg="NULL 値のキャリア: file" kind="comment"/>
+            <Ann msg="null ポインタ間接参照のポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="&quot;p&quot; は null の可能性がある" ln="30" ruleSAFMsg="null ポインタ間接参照のポイント" auth="yosuzuki" sev="1" rule="BD-PB-NP" ruleSCSCMsg="NULL 値のソース" tool="c++test" id="94102398" lang="cpp" locType="sr" config="1" hash="585379582" locStartln="30" locStartPos="0" locEndLn="31" locEndPos="0" locFile="/FlowAnalysis/nullPointerDeref.c" FirstElSrcRngStartln="29" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="30" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/nullPointerDeref.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="29" srcRngStartPos="0" srcRngEndLn="30" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="29" ElType=".C" desc="Person* p = malloc(sizeof(Person));" rngLn="29">
+          <Anns>
+            <Ann msg="NULL 値のソース" kind="cause"/>
+            <Ann msg="NULL 値のキャリア: malloc(...)" kind="comment"/>
+            <Ann msg="NULL 値のキャリア: malloc(...) -> p" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="30" srcRngStartPos="0" srcRngEndLn="31" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="30" ElType=".P" desc="p->name = name;" rngLn="30">
+          <Anns>
+            <Ann msg="NULL 値のキャリア: p" kind="comment"/>
+            <Ann msg="null ポインタ間接参照のポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="&quot;p->reference&quot; は null の可能性がある" ln="40" ruleSAFMsg="null ポインタ間接参照のポイント" auth="yosuzuki" sev="1" rule="BD-PB-NP" ruleSCSCMsg="NULL 値のソース" tool="c++test" id="415406085" lang="cpp" locType="sr" config="1" hash="585379582" locStartln="40" locStartPos="0" locEndLn="41" locEndPos="0" locFile="/FlowAnalysis/nullPointerDeref.c" FirstElSrcRngStartln="39" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="40" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/nullPointerDeref.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="38" srcRngStartPos="0" srcRngEndLn="39" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="38" ElType="." desc="char c;" rngLn="38"/>
+        <ElDesc srcRngStartln="39" srcRngStartPos="0" srcRngEndLn="40" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="39" ElType=".C" desc="Person* p = createPerson(7, &quot;Alice&quot;, NULL);" rngLn="39">
+          <ElDescList>
+            <ElDesc srcRngStartln="27" srcRngStartPos="0" srcRngEndLn="28" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="27" ElType="!" desc="Person* createPerson(int id, char* name, char* ref)" rngLn="27">
+              <Anns>
+                <Ann msg="NULL 値のキャリア: &lt;createPerson() のパラメーター#3> -> ref" kind="comment"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="29" srcRngStartPos="0" srcRngEndLn="30" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="29" ElType="." desc="Person* p = malloc(sizeof(Person));" rngLn="29"/>
+            <ElDesc srcRngStartln="30" srcRngStartPos="0" srcRngEndLn="31" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="30" ElType="." desc="p->name = name;" rngLn="30"/>
+            <ElDesc srcRngStartln="31" srcRngStartPos="0" srcRngEndLn="32" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="31" ElType="." desc="p->personalId = id;" rngLn="31"/>
+            <ElDesc srcRngStartln="32" srcRngStartPos="0" srcRngEndLn="33" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="32" ElType="!" desc="p->reference = ref;" rngLn="32">
+              <Anns>
+                <Ann msg="NULL 値のキャリア: ref -> p->reference" kind="comment"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="33" srcRngStartPos="0" srcRngEndLn="34" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="33" ElType="." desc="return p;" rngLn="33">
+              <Anns>
+                <Ann msg="NULL 値のキャリア: &lt;createPerson() の戻り値>->reference, p->reference" kind="comment"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+          <Anns>
+            <Ann msg="NULL 値のソース" kind="cause"/>
+            <Ann msg="NULL 値のキャリア: &lt;createPerson() のパラメーター#3>" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="40" srcRngStartPos="0" srcRngEndLn="41" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDeref.c" srcRnghash="585379582" ln="40" ElType=".P" desc="c = *p->reference;" rngLn="40">
+          <Anns>
+            <Ann msg="NULL 値のキャリア: p->reference" kind="comment"/>
+            <Ann msg="null ポインタ間接参照のポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <StdViol msg="c の値が 1 回も使用されない" ln="40" sev="3" auth="yosuzuki" rule="BD-PB-VOVR" tool="c++test" cat="BD-PB" lang="cpp" locType="sr" config="1" hash="585379582" locStartln="40" locStartPos="0" locEndLn="41" locEndPos="0" locFile="/FlowAnalysis/nullPointerDeref.c"/>
+    <FlowViol msg="&quot;x&quot; は null の可能性がある" ln="9" ruleSAFMsg="null ポインタ間接参照のポイント" auth="yosuzuki" sev="1" rule="BD-PB-NP" ruleSCSCMsg="NULL 値のソース" tool="c++test" id="1961218091" lang="cpp" locType="sr" config="1" hash="-1583021683" locStartln="9" locStartPos="0" locEndLn="10" locEndPos="0" locFile="/FlowAnalysis/nullPointerDerefBenchmark.c" FirstElSrcRngStartln="69" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="70" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="69" srcRngStartPos="0" srcRngEndLn="70" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c" srcRnghash="-1583021683" ln="69" ElType=".C" desc="x = 0;" rngLn="69">
+          <Anns>
+            <Ann msg="NULL 値のソース" kind="cause"/>
+            <Ann msg="NULL 値のキャリア: x" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="70" srcRngStartPos="0" srcRngEndLn="71" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c" srcRnghash="-1583021683" ln="70" ElType="." desc="if (b)" rngLn="70">
+          <Anns>
+            <Ann msg="条件評価: (b != 0) (false を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="72" srcRngStartPos="0" srcRngEndLn="73" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c" srcRnghash="-1583021683" ln="72" ElType="!" desc="helper1(...)" rngLn="72">
+          <ElDescList>
+            <ElDesc srcRngStartln="7" srcRngStartPos="0" srcRngEndLn="8" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c" srcRnghash="-1583021683" ln="7" ElType="." desc="if (b)" rngLn="7">
+              <Anns>
+                <Ann msg="条件評価: (b != 0) (false)" kind="condEval"/>
+              </Anns>
+            </ElDesc>
+            <ElDesc srcRngStartln="9" srcRngStartPos="0" srcRngEndLn="10" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c" srcRnghash="-1583021683" ln="9" ElType=".P" desc="return *x;" rngLn="9">
+              <Anns>
+                <Ann msg="NULL 値のキャリア: x" kind="comment"/>
+                <Ann msg="null ポインタ間接参照のポイント" kind="point"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="&quot;x&quot; は null の可能性がある" ln="13" ruleSAFMsg="null ポインタ間接参照のポイント" auth="yosuzuki" sev="1" rule="BD-PB-NP" ruleSCSCMsg="NULL 値のソース" tool="c++test" id="-1519262924" lang="cpp" locType="sr" config="1" hash="-1583021683" locStartln="13" locStartPos="0" locEndLn="14" locEndPos="0" locFile="/FlowAnalysis/nullPointerDerefBenchmark.c" FirstElSrcRngStartln="76" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="77" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="76" srcRngStartPos="0" srcRngEndLn="77" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c" srcRnghash="-1583021683" ln="76" ElType=".C" desc="x = 0;" rngLn="76">
+          <Anns>
+            <Ann msg="NULL 値のソース" kind="cause"/>
+            <Ann msg="NULL 値のキャリア: x" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="77" srcRngStartPos="0" srcRngEndLn="78" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c" srcRnghash="-1583021683" ln="77" ElType="!" desc="helper2()" rngLn="77">
+          <ElDescList>
+            <ElDesc srcRngStartln="13" srcRngStartPos="0" srcRngEndLn="14" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c" srcRnghash="-1583021683" ln="13" ElType=".P" desc="return *x;" rngLn="13">
+              <Anns>
+                <Ann msg="NULL 値のキャリア: x" kind="comment"/>
+                <Ann msg="null ポインタ間接参照のポイント" kind="point"/>
+              </Anns>
+            </ElDesc>
+          </ElDescList>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <StdViol msg="到達できないメソッド: int noFalseViolation1(int)" ln="16" sev="4" auth="yosuzuki" rule="BD-PB-UCMETH" tool="c++test" cat="BD-PB" lang="cpp" locType="sr" config="1" hash="-1583021683" locStartln="16" locStartPos="0" locEndLn="17" locEndPos="0" locFile="/FlowAnalysis/nullPointerDerefBenchmark.c"/>
+    <StdViol msg="到達できないメソッド: int noFalseViolation2(char)" ln="25" sev="4" auth="yosuzuki" rule="BD-PB-UCMETH" tool="c++test" cat="BD-PB" lang="cpp" locType="sr" config="1" hash="-1583021683" locStartln="25" locStartPos="0" locEndLn="26" locEndPos="0" locFile="/FlowAnalysis/nullPointerDerefBenchmark.c"/>
+    <StdViol msg="到達できないメソッド: int noFalseViolation3(char)" ln="34" sev="4" auth="yosuzuki" rule="BD-PB-UCMETH" tool="c++test" cat="BD-PB" lang="cpp" locType="sr" config="1" hash="-1583021683" locStartln="34" locStartPos="0" locEndLn="35" locEndPos="0" locFile="/FlowAnalysis/nullPointerDerefBenchmark.c"/>
+    <StdViol msg="到達できないメソッド: int trueViolation(char)" ln="44" sev="4" auth="yosuzuki" rule="BD-PB-UCMETH" tool="c++test" cat="BD-PB" lang="cpp" locType="sr" config="1" hash="-1583021683" locStartln="44" locStartPos="0" locEndLn="45" locEndPos="0" locFile="/FlowAnalysis/nullPointerDerefBenchmark.c"/>
+    <FlowViol msg="&quot;x&quot; は null の可能性がある" ln="51" ruleSAFMsg="null ポインタ間接参照のポイント" auth="yosuzuki" sev="1" rule="BD-PB-NP" ruleSCSCMsg="NULL 値のソース" tool="c++test" id="-340722880" lang="cpp" locType="sr" config="1" hash="-1583021683" locStartln="51" locStartPos="0" locEndLn="52" locEndPos="0" locFile="/FlowAnalysis/nullPointerDerefBenchmark.c" FirstElSrcRngStartln="46" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="47" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="45" srcRngStartPos="0" srcRngEndLn="46" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c" srcRnghash="-1583021683" ln="45" ElType="." desc="int* y = 0;" rngLn="45"/>
+        <ElDesc srcRngStartln="46" srcRngStartPos="0" srcRngEndLn="47" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c" srcRnghash="-1583021683" ln="46" ElType=".C" desc="if (x != 0)" rngLn="46">
+          <Anns>
+            <Ann msg="NULL 値のソース" kind="cause"/>
+            <Ann msg="NULL 値のキャリア: x" kind="comment"/>
+            <Ann msg="条件評価: (x != 0) (false を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="48" srcRngStartPos="0" srcRngEndLn="49" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c" srcRnghash="-1583021683" ln="48" ElType="." desc="if (y != 0)" rngLn="48">
+          <Anns>
+            <Ann msg="条件評価: (y != 0) (false)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="51" srcRngStartPos="0" srcRngEndLn="52" srcRngEndPos="0" srcRngFile="/FlowAnalysis/nullPointerDerefBenchmark.c" srcRnghash="-1583021683" ln="51" ElType=".P" desc="return *x;" rngLn="51">
+          <Anns>
+            <Ann msg="NULL 値のキャリア: x" kind="comment"/>
+            <Ann msg="null ポインタ間接参照のポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <StdViol msg="到達できないメソッド: int functionCall_noFalseViolation1(char)" ln="54" sev="4" auth="yosuzuki" rule="BD-PB-UCMETH" tool="c++test" cat="BD-PB" lang="cpp" locType="sr" config="1" hash="-1583021683" locStartln="54" locStartPos="0" locEndLn="55" locEndPos="0" locFile="/FlowAnalysis/nullPointerDerefBenchmark.c"/>
+    <StdViol msg="到達できないメソッド: int functionCall_noFalseViolation2(int *)" ln="62" sev="4" auth="yosuzuki" rule="BD-PB-UCMETH" tool="c++test" cat="BD-PB" lang="cpp" locType="sr" config="1" hash="-1583021683" locStartln="62" locStartPos="0" locEndLn="63" locEndPos="0" locFile="/FlowAnalysis/nullPointerDerefBenchmark.c"/>
+    <StdViol msg="到達できないメソッド: int functionCall_trueViolation1(char)" ln="68" sev="4" auth="yosuzuki" rule="BD-PB-UCMETH" tool="c++test" cat="BD-PB" lang="cpp" locType="sr" config="1" hash="-1583021683" locStartln="68" locStartPos="0" locEndLn="69" locEndPos="0" locFile="/FlowAnalysis/nullPointerDerefBenchmark.c"/>
+    <StdViol msg="到達できないメソッド: int functionCall_trueViolation2(void)" ln="75" sev="4" auth="yosuzuki" rule="BD-PB-UCMETH" tool="c++test" cat="BD-PB" lang="cpp" locType="sr" config="1" hash="-1583021683" locStartln="75" locStartPos="0" locEndLn="76" locEndPos="0" locFile="/FlowAnalysis/nullPointerDerefBenchmark.c"/>
+    <FlowViol msg="メソッド fread から返される値をチェックするべきである" ln="29" ruleSAFMsg="返された値をここまでにチェックするべきポイント" auth="yosuzuki" sev="2" rule="BD-PB-CHECKRETGEN" ruleSCSCMsg="メソッド呼び出し" tool="c++test" id="1444759334" lang="cpp" locType="sr" config="1" hash="-1138451494" locStartln="29" locStartPos="0" locEndLn="30" locEndPos="0" locFile="/FlowAnalysis/sqlInjection.c" FirstElSrcRngStartln="29" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="30" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/sqlInjection.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="26" srcRngStartPos="0" srcRngEndLn="27" srcRngEndPos="0" srcRngFile="/FlowAnalysis/sqlInjection.c" srcRnghash="-1138451494" ln="26" ElType="." desc="char parametersString[BUF_SIZE];" rngLn="26"/>
+        <ElDesc srcRngStartln="27" srcRngStartPos="0" srcRngEndLn="28" srcRngEndPos="0" srcRngFile="/FlowAnalysis/sqlInjection.c" srcRnghash="-1138451494" ln="27" ElType="." desc="char request[BUF_SIZE];" rngLn="27"/>
+        <ElDesc srcRngStartln="29" srcRngStartPos="0" srcRngEndLn="30" srcRngEndPos="0" srcRngFile="/FlowAnalysis/sqlInjection.c" srcRnghash="-1138451494" ln="29" ElType="CP" desc="fread(parametersString, 1, BUF_SIZE, file);" rngLn="29">
+          <Anns>
+            <Ann msg="メソッド呼び出し" kind="cause"/>
+            <Ann msg="返された値をここまでにチェックするべきポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <StdViol msg="到達できないメソッド: void guessFigure(int, int)" ln="11" sev="4" auth="yosuzuki" rule="BD-PB-UCMETH" tool="c++test" cat="BD-PB" lang="cpp" locType="sr" config="1" hash="1398926183" locStartln="11" locStartPos="0" locEndLn="12" locEndPos="0" locFile="/FlowAnalysis/unreachableCode.c"/>
+    <FlowViol msg="条件 &quot;!volumetric&quot; は常に true に評価される" ln="16" ruleSAFMsg="意味を持たない条件が使用されたポイント" auth="yosuzuki" sev="2" rule="BD-PB-CC" ruleSCSCMsg="パスの開始" tool="c++test" id="-986365914" lang="cpp" locType="sr" config="1" hash="1398926183" locStartln="16" locStartPos="0" locEndLn="17" locEndPos="0" locFile="/FlowAnalysis/unreachableCode.c" FirstElSrcRngStartln="11" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="12" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/unreachableCode.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="11" srcRngStartPos="0" srcRngEndLn="12" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="11" ElType=".C" desc="static void guessFigure(int round, int volumetric)" rngLn="11">
+          <Anns>
+            <Ann msg="パスの開始" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="13" srcRngStartPos="0" srcRngEndLn="14" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="13" ElType="." desc="int figure;" rngLn="13"/>
+        <ElDesc srcRngStartln="14" srcRngStartPos="0" srcRngEndLn="15" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="14" ElType="!" desc="if (round &amp;&amp; volumetric) {" rngLn="14">
+          <Anns>
+            <Ann msg="条件評価: (round != 0) (true を仮定)" kind="condEval"/>
+            <Ann msg="条件評価: (volumetric != 0) (false を仮定)" kind="condEval"/>
+            <Ann msg="条件評価: round &amp;&amp; volumetric (false)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="16" srcRngStartPos="0" srcRngEndLn="17" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="16" ElType=".P" desc="} else if (round &amp;&amp; !volumetric) {" rngLn="16">
+          <Anns>
+            <Ann msg="条件評価: (round != 0) (true)" kind="condEval"/>
+            <Ann msg="意味を持たない条件が使用されたポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="条件 &quot;!round&quot; は常に true に評価される" ln="18" ruleSAFMsg="意味を持たない条件が使用されたポイント" auth="yosuzuki" sev="2" rule="BD-PB-CC" ruleSCSCMsg="パスの開始" tool="c++test" id="-1780134809" lang="cpp" locType="sr" config="1" hash="1398926183" locStartln="18" locStartPos="0" locEndLn="19" locEndPos="0" locFile="/FlowAnalysis/unreachableCode.c" FirstElSrcRngStartln="11" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="12" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/unreachableCode.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="11" srcRngStartPos="0" srcRngEndLn="12" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="11" ElType=".C" desc="static void guessFigure(int round, int volumetric)" rngLn="11">
+          <Anns>
+            <Ann msg="パスの開始" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="13" srcRngStartPos="0" srcRngEndLn="14" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="13" ElType="." desc="int figure;" rngLn="13"/>
+        <ElDesc srcRngStartln="14" srcRngStartPos="0" srcRngEndLn="15" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="14" ElType="!" desc="if (round &amp;&amp; volumetric) {" rngLn="14">
+          <Anns>
+            <Ann msg="条件評価: (round != 0) (false を仮定)" kind="condEval"/>
+            <Ann msg="条件評価: round &amp;&amp; volumetric (false)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="16" srcRngStartPos="0" srcRngEndLn="17" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="16" ElType="." desc="} else if (round &amp;&amp; !volumetric) {" rngLn="16">
+          <Anns>
+            <Ann msg="条件評価: (round != 0) (false)" kind="condEval"/>
+            <Ann msg="条件評価: round &amp;&amp; !volumetric (false)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="18" srcRngStartPos="0" srcRngEndLn="19" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="18" ElType=".P" desc="} else if (!round &amp;&amp; volumetric) {" rngLn="18">
+          <Anns>
+            <Ann msg="意味を持たない条件が使用されたポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="到達不可能なブランチ: &quot;case HEMISPHERE&quot;" ln="24" ruleSAFMsg="到達不可能なブランチがある switch が定義されたポイント" auth="yosuzuki" sev="2" rule="BD-PB-SWITCH" ruleSCSCMsg="パスの開始" tool="c++test" id="-1843097203" lang="cpp" locType="sr" config="1" hash="1398926183" locStartln="24" locStartPos="0" locEndLn="25" locEndPos="0" locFile="/FlowAnalysis/unreachableCode.c" FirstElSrcRngStartln="11" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="12" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/unreachableCode.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="11" srcRngStartPos="0" srcRngEndLn="12" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="11" ElType=".C" desc="static void guessFigure(int round, int volumetric)" rngLn="11">
+          <Anns>
+            <Ann msg="パスの開始" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="13" srcRngStartPos="0" srcRngEndLn="14" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="13" ElType="." desc="int figure;" rngLn="13"/>
+        <ElDesc srcRngStartln="14" srcRngStartPos="0" srcRngEndLn="15" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="14" ElType="." desc="if (round &amp;&amp; volumetric) {" rngLn="14">
+          <Anns>
+            <Ann msg="条件評価: (round != 0) (true を仮定)" kind="condEval"/>
+            <Ann msg="条件評価: (volumetric != 0) (true を仮定)" kind="condEval"/>
+            <Ann msg="条件評価: round &amp;&amp; volumetric (true)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="15" srcRngStartPos="0" srcRngEndLn="16" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="15" ElType="!" desc="figure = SPHERE;" rngLn="15"/>
+        <ElDesc srcRngStartln="24" srcRngStartPos="0" srcRngEndLn="25" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="24" ElType=".P" desc="switch (figure) {" rngLn="24">
+          <Anns>
+            <Ann msg="到達不可能なブランチがある switch が定義されたポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <StdViol msg="到達できないメソッド: void checkRange(char *)" ln="44" sev="4" auth="yosuzuki" rule="BD-PB-UCMETH" tool="c++test" cat="BD-PB" lang="cpp" locType="sr" config="1" hash="1398926183" locStartln="44" locStartPos="0" locEndLn="45" locEndPos="0" locFile="/FlowAnalysis/unreachableCode.c"/>
+    <FlowViol msg="条件 &quot;(*cur >= 'a') &amp;&amp; (*cur &lt;= 'f')&quot; は常に false に評価される" ln="51" ruleSAFMsg="意味を持たない条件が使用されたポイント" auth="yosuzuki" sev="2" rule="BD-PB-CC" ruleSCSCMsg="パスの開始" tool="c++test" id="794342911" lang="cpp" locType="sr" config="1" hash="1398926183" locStartln="51" locStartPos="0" locEndLn="52" locEndPos="0" locFile="/FlowAnalysis/unreachableCode.c" FirstElSrcRngStartln="44" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="45" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/unreachableCode.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="44" srcRngStartPos="0" srcRngEndLn="45" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="44" ElType=".C" desc="static void checkRange(char* cur)" rngLn="44">
+          <Anns>
+            <Ann msg="パスの開始" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="46" srcRngStartPos="0" srcRngEndLn="47" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="46" ElType="." desc="if ((*cur &lt; '0') || (*cur > '9')) {" rngLn="46">
+          <Anns>
+            <Ann msg="条件評価: (*cur &lt; 48) (false を仮定)" kind="condEval"/>
+            <Ann msg="条件評価: (*cur > 57) (false を仮定)" kind="condEval"/>
+            <Ann msg="条件評価: (*cur &lt; '0') || (*cur > '9') (false)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="51" srcRngStartPos="0" srcRngEndLn="52" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="51" ElType=".P" desc="if ((*cur >= 'a') &amp;&amp; (*cur &lt;= 'f')) {" rngLn="51">
+          <Anns>
+            <Ann msg="条件評価: (*cur >= 97) (false)" kind="condEval"/>
+            <Ann msg="意味を持たない条件が使用されたポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="条件 &quot;(int)*cur >= 97&quot; は常に false に評価される" ln="51" ruleSAFMsg="意味を持たない条件が使用されたポイント" auth="yosuzuki" sev="2" rule="BD-PB-CC" ruleSCSCMsg="パスの開始" tool="c++test" id="-1003792216" lang="cpp" locType="sr" config="1" hash="1398926183" locStartln="51" locStartPos="0" locEndLn="52" locEndPos="0" locFile="/FlowAnalysis/unreachableCode.c" FirstElSrcRngStartln="44" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="45" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/unreachableCode.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="44" srcRngStartPos="0" srcRngEndLn="45" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="44" ElType=".C" desc="static void checkRange(char* cur)" rngLn="44">
+          <Anns>
+            <Ann msg="パスの開始" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="46" srcRngStartPos="0" srcRngEndLn="47" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="46" ElType="." desc="if ((*cur &lt; '0') || (*cur > '9')) {" rngLn="46">
+          <Anns>
+            <Ann msg="条件評価: (*cur &lt; 48) (false を仮定)" kind="condEval"/>
+            <Ann msg="条件評価: (*cur > 57) (false を仮定)" kind="condEval"/>
+            <Ann msg="条件評価: (*cur &lt; '0') || (*cur > '9') (false)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="51" srcRngStartPos="0" srcRngEndLn="52" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="51" ElType=".P" desc="if ((*cur >= 'a') &amp;&amp; (*cur &lt;= 'f')) {" rngLn="51">
+          <Anns>
+            <Ann msg="意味を持たない条件が使用されたポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <StdViol msg="到達できないメソッド: void checkSequence(char *)" ln="56" sev="4" auth="yosuzuki" rule="BD-PB-UCMETH" tool="c++test" cat="BD-PB" lang="cpp" locType="sr" config="1" hash="1398926183" locStartln="56" locStartPos="0" locEndLn="57" locEndPos="0" locFile="/FlowAnalysis/unreachableCode.c"/>
+    <FlowViol msg="条件 &quot;cur == 0&quot; は常に false に評価される" ln="63" ruleSAFMsg="意味を持たない条件が使用されたポイント" auth="yosuzuki" sev="2" rule="BD-PB-CC" ruleSCSCMsg="パスの開始" tool="c++test" id="1311807298" lang="cpp" locType="sr" config="1" hash="1398926183" locStartln="63" locStartPos="0" locEndLn="64" locEndPos="0" locFile="/FlowAnalysis/unreachableCode.c" FirstElSrcRngStartln="56" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="57" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/unreachableCode.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="56" srcRngStartPos="0" srcRngEndLn="57" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="56" ElType=".C" desc="static void checkSequence(char cur[])" rngLn="56">
+          <Anns>
+            <Ann msg="パスの開始" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="58" srcRngStartPos="0" srcRngEndLn="59" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="58" ElType="." desc="if (cur[0] == '-') {" rngLn="58">
+          <Anns>
+            <Ann msg="条件評価: (cur[0] == 45) (false を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="63" srcRngStartPos="0" srcRngEndLn="64" srcRngEndPos="0" srcRngFile="/FlowAnalysis/unreachableCode.c" srcRnghash="1398926183" ln="63" ElType=".P" desc="if (cur == 0) {" rngLn="63">
+          <Anns>
+            <Ann msg="意味を持たない条件が使用されたポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="初期化されていない &quot;numberOfCharactersPrinted&quot; が使用されている" ln="27" ruleSAFMsg="使用ポイント" auth="yosuzuki" sev="1" rule="BD-PB-NOTINIT" ruleSCSCMsg="初期化されていない値のソース" tool="c++test" id="408529946" lang="cpp" locType="sr" config="1" hash="389143777" locStartln="27" locStartPos="0" locEndLn="28" locEndPos="0" locFile="/FlowAnalysis/useBeforeInit.c" FirstElSrcRngStartln="18" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="19" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/useBeforeInit.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="17" srcRngStartPos="0" srcRngEndLn="18" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="17" ElType="." desc="FILE *file;" rngLn="17"/>
+        <ElDesc srcRngStartln="18" srcRngStartPos="0" srcRngEndLn="19" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="18" ElType=".C" desc="int numberOfCharactersPrinted;" rngLn="18">
+          <Anns>
+            <Ann msg="初期化されていない値のソース" kind="cause"/>
+            <Ann msg="初期化されていない値: numberOfCharactersPrinted" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="19" srcRngStartPos="0" srcRngEndLn="20" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="19" ElType="." desc="file = fopen(filename, &quot;w&quot;);" rngLn="19"/>
+        <ElDesc srcRngStartln="21" srcRngStartPos="0" srcRngEndLn="22" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="21" ElType="." desc="if (file!=NULL) {" rngLn="21">
+          <Anns>
+            <Ann msg="条件評価: (file != 0) (false を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="27" srcRngStartPos="0" srcRngEndLn="28" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="27" ElType=".P" desc="printf(&quot;File length: %d\n&quot;, numberOfCharactersPrinted);" rngLn="27">
+          <Anns>
+            <Ann msg="初期化されていない値: numberOfCharactersPrinted" kind="comment"/>
+            <Ann msg="使用ポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="ファイルがクローズされていない: file" ln="40" ruleSAFMsg="オープンされたファイルが失われたポイント" auth="yosuzuki" sev="1" rule="BD-RES-LEAKS" ruleSCSCMsg="ファイルがオープンされたポイント" tool="c++test" id="1331038766" lang="cpp" locType="sr" config="1" hash="389143777" locStartln="40" locStartPos="0" locEndLn="41" locEndPos="0" locFile="/FlowAnalysis/useBeforeInit.c" FirstElSrcRngStartln="34" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="35" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/useBeforeInit.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="32" srcRngStartPos="0" srcRngEndLn="33" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="32" ElType="." desc="Person* p;" rngLn="32"/>
+        <ElDesc srcRngStartln="33" srcRngStartPos="0" srcRngEndLn="34" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="33" ElType="." desc="FILE *file;" rngLn="33"/>
+        <ElDesc srcRngStartln="34" srcRngStartPos="0" srcRngEndLn="35" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="34" ElType=".C" desc="file = fopen(filename, &quot;r&quot;);" rngLn="34">
+          <Anns>
+            <Ann msg="ファイルがオープンされたポイント" kind="cause"/>
+            <Ann msg="オープンされたファイル: file" kind="var"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="35" srcRngStartPos="0" srcRngEndLn="36" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="35" ElType="." desc="if (file!=NULL) {" rngLn="35">
+          <Anns>
+            <Ann msg="条件評価: (file != 0) (true を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="36" srcRngStartPos="0" srcRngEndLn="37" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="36" ElType="." desc="char id[10];" rngLn="36"/>
+        <ElDesc srcRngStartln="37" srcRngStartPos="0" srcRngEndLn="38" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="37" ElType="." desc="char name[100];" rngLn="37"/>
+        <ElDesc srcRngStartln="38" srcRngStartPos="0" srcRngEndLn="39" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="38" ElType="." desc="char reference[1000];" rngLn="38"/>
+        <ElDesc srcRngStartln="39" srcRngStartPos="0" srcRngEndLn="40" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="39" ElType="." desc="p = malloc(sizeof(Person));" rngLn="39"/>
+        <ElDesc srcRngStartln="40" srcRngStartPos="0" srcRngEndLn="41" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="40" ElType=".P" desc="exit(...)" rngLn="40">
+          <Anns>
+            <Ann msg="オープンされたファイル: file" kind="var"/>
+            <Ann msg="オープンされたファイルが失われたポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="メソッド fgets から返される値をチェックするべきである" ln="41" ruleSAFMsg="返された値をここまでにチェックするべきポイント" auth="yosuzuki" sev="2" rule="BD-PB-CHECKRETGEN" ruleSCSCMsg="メソッド呼び出し" tool="c++test" id="1750106852" lang="cpp" locType="sr" config="1" hash="389143777" locStartln="41" locStartPos="0" locEndLn="42" locEndPos="0" locFile="/FlowAnalysis/useBeforeInit.c" FirstElSrcRngStartln="41" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="42" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/useBeforeInit.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="32" srcRngStartPos="0" srcRngEndLn="33" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="32" ElType="." desc="Person* p;" rngLn="32"/>
+        <ElDesc srcRngStartln="33" srcRngStartPos="0" srcRngEndLn="34" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="33" ElType="." desc="FILE *file;" rngLn="33"/>
+        <ElDesc srcRngStartln="34" srcRngStartPos="0" srcRngEndLn="35" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="34" ElType="." desc="file = fopen(filename, &quot;r&quot;);" rngLn="34"/>
+        <ElDesc srcRngStartln="35" srcRngStartPos="0" srcRngEndLn="36" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="35" ElType="." desc="if (file!=NULL) {" rngLn="35">
+          <Anns>
+            <Ann msg="条件評価: (file != 0) (true を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="36" srcRngStartPos="0" srcRngEndLn="37" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="36" ElType="." desc="char id[10];" rngLn="36"/>
+        <ElDesc srcRngStartln="37" srcRngStartPos="0" srcRngEndLn="38" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="37" ElType="." desc="char name[100];" rngLn="37"/>
+        <ElDesc srcRngStartln="38" srcRngStartPos="0" srcRngEndLn="39" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="38" ElType="." desc="char reference[1000];" rngLn="38"/>
+        <ElDesc srcRngStartln="39" srcRngStartPos="0" srcRngEndLn="40" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="39" ElType="." desc="p = malloc(sizeof(Person));" rngLn="39"/>
+        <ElDesc srcRngStartln="40" srcRngStartPos="0" srcRngEndLn="41" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="40" ElType="." desc="if (p == 0) exit(1);" rngLn="40">
+          <Anns>
+            <Ann msg="条件評価: (p == 0) (false を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="41" srcRngStartPos="0" srcRngEndLn="42" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="41" ElType="CP" desc="fgets(id, 10, file);" rngLn="41">
+          <Anns>
+            <Ann msg="メソッド呼び出し" kind="cause"/>
+            <Ann msg="返された値をここまでにチェックするべきポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="&quot;fgets&quot; メソッドの文字列 &quot;id&quot; が使用されているが、リセットされていなかった" ln="42" ruleSAFMsg="文字列が使用される場所" auth="yosuzuki" sev="2" rule="BD-PB-FGETS" ruleSCSCMsg="文字列が取得されるポイント" tool="c++test" id="-1384858125" lang="cpp" locType="sr" config="1" hash="389143777" locStartln="42" locStartPos="0" locEndLn="43" locEndPos="0" locFile="/FlowAnalysis/useBeforeInit.c" FirstElSrcRngStartln="41" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="42" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/useBeforeInit.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="41" srcRngStartPos="0" srcRngEndLn="42" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="41" ElType=".C" desc="fgets(id, 10, file);" rngLn="41">
+          <Anns>
+            <Ann msg="文字列が取得されるポイント" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="42" srcRngStartPos="0" srcRngEndLn="43" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="42" ElType=".P" desc="p->personalId = atoi(id);" rngLn="42">
+          <Anns>
+            <Ann msg="文字列が使用される場所" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="メソッド fgets から返される値をチェックするべきである" ln="43" ruleSAFMsg="返された値をここまでにチェックするべきポイント" auth="yosuzuki" sev="2" rule="BD-PB-CHECKRETGEN" ruleSCSCMsg="メソッド呼び出し" tool="c++test" id="-1409740100" lang="cpp" locType="sr" config="1" hash="389143777" locStartln="43" locStartPos="0" locEndLn="44" locEndPos="0" locFile="/FlowAnalysis/useBeforeInit.c" FirstElSrcRngStartln="43" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="44" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/useBeforeInit.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="32" srcRngStartPos="0" srcRngEndLn="33" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="32" ElType="." desc="Person* p;" rngLn="32"/>
+        <ElDesc srcRngStartln="33" srcRngStartPos="0" srcRngEndLn="34" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="33" ElType="." desc="FILE *file;" rngLn="33"/>
+        <ElDesc srcRngStartln="34" srcRngStartPos="0" srcRngEndLn="35" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="34" ElType="." desc="file = fopen(filename, &quot;r&quot;);" rngLn="34"/>
+        <ElDesc srcRngStartln="35" srcRngStartPos="0" srcRngEndLn="36" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="35" ElType="." desc="if (file!=NULL) {" rngLn="35">
+          <Anns>
+            <Ann msg="条件評価: (file != 0) (true を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="36" srcRngStartPos="0" srcRngEndLn="37" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="36" ElType="." desc="char id[10];" rngLn="36"/>
+        <ElDesc srcRngStartln="37" srcRngStartPos="0" srcRngEndLn="38" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="37" ElType="." desc="char name[100];" rngLn="37"/>
+        <ElDesc srcRngStartln="38" srcRngStartPos="0" srcRngEndLn="39" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="38" ElType="." desc="char reference[1000];" rngLn="38"/>
+        <ElDesc srcRngStartln="39" srcRngStartPos="0" srcRngEndLn="40" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="39" ElType="." desc="p = malloc(sizeof(Person));" rngLn="39"/>
+        <ElDesc srcRngStartln="40" srcRngStartPos="0" srcRngEndLn="41" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="40" ElType="." desc="if (p == 0) exit(1);" rngLn="40">
+          <Anns>
+            <Ann msg="条件評価: (p == 0) (false を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="41" srcRngStartPos="0" srcRngEndLn="42" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="41" ElType="." desc="fgets(id, 10, file);" rngLn="41"/>
+        <ElDesc srcRngStartln="42" srcRngStartPos="0" srcRngEndLn="43" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="42" ElType="." desc="p->personalId = atoi(id);" rngLn="42"/>
+        <ElDesc srcRngStartln="43" srcRngStartPos="0" srcRngEndLn="44" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="43" ElType="CP" desc="fgets(name, 100, file);" rngLn="43">
+          <Anns>
+            <Ann msg="メソッド呼び出し" kind="cause"/>
+            <Ann msg="返された値をここまでにチェックするべきポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="メソッド fgets から返される値をチェックするべきである" ln="45" ruleSAFMsg="返された値をここまでにチェックするべきポイント" auth="yosuzuki" sev="2" rule="BD-PB-CHECKRETGEN" ruleSCSCMsg="メソッド呼び出し" tool="c++test" id="-1294370536" lang="cpp" locType="sr" config="1" hash="389143777" locStartln="45" locStartPos="0" locEndLn="46" locEndPos="0" locFile="/FlowAnalysis/useBeforeInit.c" FirstElSrcRngStartln="45" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="46" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/useBeforeInit.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="32" srcRngStartPos="0" srcRngEndLn="33" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="32" ElType="." desc="Person* p;" rngLn="32"/>
+        <ElDesc srcRngStartln="33" srcRngStartPos="0" srcRngEndLn="34" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="33" ElType="." desc="FILE *file;" rngLn="33"/>
+        <ElDesc srcRngStartln="34" srcRngStartPos="0" srcRngEndLn="35" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="34" ElType="." desc="file = fopen(filename, &quot;r&quot;);" rngLn="34"/>
+        <ElDesc srcRngStartln="35" srcRngStartPos="0" srcRngEndLn="36" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="35" ElType="." desc="if (file!=NULL) {" rngLn="35">
+          <Anns>
+            <Ann msg="条件評価: (file != 0) (true を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="36" srcRngStartPos="0" srcRngEndLn="37" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="36" ElType="." desc="char id[10];" rngLn="36"/>
+        <ElDesc srcRngStartln="37" srcRngStartPos="0" srcRngEndLn="38" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="37" ElType="." desc="char name[100];" rngLn="37"/>
+        <ElDesc srcRngStartln="38" srcRngStartPos="0" srcRngEndLn="39" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="38" ElType="." desc="char reference[1000];" rngLn="38"/>
+        <ElDesc srcRngStartln="39" srcRngStartPos="0" srcRngEndLn="40" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="39" ElType="." desc="p = malloc(sizeof(Person));" rngLn="39"/>
+        <ElDesc srcRngStartln="40" srcRngStartPos="0" srcRngEndLn="41" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="40" ElType="." desc="if (p == 0) exit(1);" rngLn="40">
+          <Anns>
+            <Ann msg="条件評価: (p == 0) (false を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="41" srcRngStartPos="0" srcRngEndLn="42" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="41" ElType="." desc="fgets(id, 10, file);" rngLn="41"/>
+        <ElDesc srcRngStartln="42" srcRngStartPos="0" srcRngEndLn="43" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="42" ElType="." desc="p->personalId = atoi(id);" rngLn="42"/>
+        <ElDesc srcRngStartln="43" srcRngStartPos="0" srcRngEndLn="44" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="43" ElType="." desc="fgets(name, 100, file);" rngLn="43"/>
+        <ElDesc srcRngStartln="44" srcRngStartPos="0" srcRngEndLn="45" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="44" ElType="." desc="p->name = name;" rngLn="44"/>
+        <ElDesc srcRngStartln="45" srcRngStartPos="0" srcRngEndLn="46" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="45" ElType="CP" desc="fgets(reference, 100, file);" rngLn="45">
+          <Anns>
+            <Ann msg="メソッド呼び出し" kind="cause"/>
+            <Ann msg="返された値をここまでにチェックするべきポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="初期化されていない &quot;p&quot; が使用されている" ln="50" ruleSAFMsg="使用ポイント" auth="yosuzuki" sev="1" rule="BD-PB-NOTINIT" ruleSCSCMsg="初期化されていない値のソース" tool="c++test" id="1029733059" lang="cpp" locType="sr" config="1" hash="389143777" locStartln="50" locStartPos="0" locEndLn="51" locEndPos="0" locFile="/FlowAnalysis/useBeforeInit.c" FirstElSrcRngStartln="32" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="33" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/useBeforeInit.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="32" srcRngStartPos="0" srcRngEndLn="33" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="32" ElType=".C" desc="Person* p;" rngLn="32">
+          <Anns>
+            <Ann msg="初期化されていない値のソース" kind="cause"/>
+            <Ann msg="初期化されていない値: p" kind="comment"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="33" srcRngStartPos="0" srcRngEndLn="34" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="33" ElType="." desc="FILE *file;" rngLn="33"/>
+        <ElDesc srcRngStartln="34" srcRngStartPos="0" srcRngEndLn="35" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="34" ElType="." desc="file = fopen(filename, &quot;r&quot;);" rngLn="34"/>
+        <ElDesc srcRngStartln="35" srcRngStartPos="0" srcRngEndLn="36" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="35" ElType="." desc="if (file!=NULL) {" rngLn="35">
+          <Anns>
+            <Ann msg="条件評価: (file != 0) (false を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="50" srcRngStartPos="0" srcRngEndLn="51" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="50" ElType=".P" desc="storePersonToDB(p);" rngLn="50">
+          <Anns>
+            <Ann msg="初期化されていない値: p" kind="comment"/>
+            <Ann msg="使用ポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+    <FlowViol msg="無効なリソースの解放: &quot;p&quot; がヒープ メモリ内で初期化されていない" ln="51" ruleSAFMsg="解放されたポイント" auth="yosuzuki" sev="1" rule="BD-RES-INVFREE" ruleSCSCMsg="パスの開始" tool="c++test" id="980173193" lang="cpp" locType="sr" config="1" hash="389143777" locStartln="51" locStartPos="0" locEndLn="52" locEndPos="0" locFile="/FlowAnalysis/useBeforeInit.c" FirstElSrcRngStartln="30" FirstElSrcRngStartPos="0" FirstElSrcRngEndLn="31" FirstElSrcRngEndPos="0" FirstElSrcRngFile="/FlowAnalysis/useBeforeInit.c">
+      <ElDescList>
+        <ElDesc srcRngStartln="30" srcRngStartPos="0" srcRngEndLn="31" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="30" ElType=".C" desc="void copyPersonFromFileToDB(char* filename)" rngLn="30">
+          <Anns>
+            <Ann msg="パスの開始" kind="cause"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="32" srcRngStartPos="0" srcRngEndLn="33" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="32" ElType="." desc="Person* p;" rngLn="32"/>
+        <ElDesc srcRngStartln="33" srcRngStartPos="0" srcRngEndLn="34" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="33" ElType="." desc="FILE *file;" rngLn="33"/>
+        <ElDesc srcRngStartln="34" srcRngStartPos="0" srcRngEndLn="35" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="34" ElType="." desc="file = fopen(filename, &quot;r&quot;);" rngLn="34"/>
+        <ElDesc srcRngStartln="35" srcRngStartPos="0" srcRngEndLn="36" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="35" ElType="." desc="if (file!=NULL) {" rngLn="35">
+          <Anns>
+            <Ann msg="条件評価: (file != 0) (false を仮定)" kind="condEval"/>
+          </Anns>
+        </ElDesc>
+        <ElDesc srcRngStartln="50" srcRngStartPos="0" srcRngEndLn="51" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="50" ElType="." desc="storePersonToDB(p);" rngLn="50"/>
+        <ElDesc srcRngStartln="51" srcRngStartPos="0" srcRngEndLn="52" srcRngEndPos="0" srcRngFile="/FlowAnalysis/useBeforeInit.c" srcRnghash="389143777" ln="51" ElType=".P" desc="free(p);" rngLn="51">
+          <Anns>
+            <Ann msg="解放されたポイント" kind="point"/>
+          </Anns>
+        </ElDesc>
+      </ElDescList>
+    </FlowViol>
+  </StdViols>
+
+      <Supps/>
+      
+   </CodingStandards>
+   <AssocUrls/>
+</ResultsSession>
