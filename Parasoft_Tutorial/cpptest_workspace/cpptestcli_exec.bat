@@ -7,6 +7,7 @@ set PROJECT_NAME=FlowAnalysis
 
 cpptestcli ^
 -data %WORKSPACE_DIR% ^
+-bdf %WORKSPACE_DIR%\%PROJECT_NAME%\cpptestscan.bdf ^
 -resource %PROJECT_NAME% ^
 -config "%~dp0..\tools\TestConfig\1_フロー解析（チュートリアル）.properties" ^
 -report %WORKSPACE_DIR%\report ^
